@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "case_id": "l3_public_injected_tail__public_tail__iris__low8__seed23__exact__b0__69cd47a97ea5",
+  "case": {
+    "experiment": "l3_public_injected_tail",
+    "scenario": "public_tail",
+    "dataset": "iris",
+    "algorithm": "exact",
+    "seed": 23,
+    "artificial_low_count": 8,
+    "equivalent_mc_paths": 0,
+    "contribution_threshold": 0.04,
+    "threshold_margin": 0.005,
+    "interaction_order": 0,
+    "reference": true,
+    "enable_dynamic_regrouping": true,
+    "enable_coalition_audit": true,
+    "max_screening_budget_ratio": 0.2,
+    "low_audit_rate": 0.15,
+    "coalition_audits_per_check": 2,
+    "implementation_version": "dtg_paper_confirmatory",
+    "threshold_mode": "relative",
+    "relative_threshold_factor": 0.5,
+    "minimum_inclusion_probability": 0.1,
+    "use_antithetic_sampling": true,
+    "feature_subset_count": 0,
+    "feature_subset_seed": 11,
+    "value_quantifier": "mutual_information",
+    "method_variant": "default",
+    "reference_group": null,
+    "dtg_min_adaptive_savings_ratio": 0.05,
+    "dtg_min_context_observations": 1,
+    "tmc_truncation_tolerance_ratio": 0.01
+  },
+  "dataset": {
+    "name": "iris",
+    "sample_count": 150,
+    "feature_count": 12,
+    "feature_names": [
+      "sepal_length",
+      "sepal_width",
+      "petal_length",
+      "petal_width",
+      "synthetic_low_1",
+      "synthetic_low_2",
+      "synthetic_low_3",
+      "synthetic_low_4",
+      "synthetic_low_5",
+      "synthetic_low_6",
+      "synthetic_low_7",
+      "synthetic_low_8"
+    ],
+    "preprocessing": {
+      "acc_gtmc_artificial_low_fields": {
+        "count": 8,
+        "seed": 23,
+        "range": [
+          1,
+          2
+        ],
+        "independent_of_target": true,
+        "cache_file": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed23.npz"
+      }
+    },
+    "value_quantifier": "mutual_information",
+    "artificial_field_cache": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed23.npz"
+  },
+  "metrics": {
+    "started_at": "2026-08-29T06:00:08.408220+00:00",
+    "ended_at": "2026-08-29T06:00:17.261474+00:00",
+    "runtime_seconds": 8.853121899999678,
+    "sample_count": 0,
+    "actual_value_function_calls": 4096,
+    "value_function_evaluation_requests": 4096,
+    "known_low_capture_ratio": null,
+    "candidate_low_screening_ratio": 0.0,
+    "diagnostics": {
+      "value_evaluations": 4096,
+      "standard_errors": {},
+      "screening_estimates": {},
+      "screening_observation_counts": {},
+      "formal_observation_counts": {},
+      "total_observation_counts": {},
+      "low_allocation_weights": {},
+      "corrected_round_counts": {},
+      "inclusion_counts": {},
+      "mean_inclusion_probabilities": {},
+      "formal_stratum_sample_counts": {},
+      "context_observation_counts": {},
+      "actual_value_function_calls": 4096,
+      "value_function_evaluation_requests": 4096
+    }
+  },
+  "result": {
+    "shapley_values": {
+      "sepal_length": 0.28942472994709273,
+      "sepal_width": 0.2411126087004631,
+      "petal_length": 0.5168900914391995,
+      "petal_width": 0.5148297368466936,
+      "synthetic_low_1": 0.0,
+      "synthetic_low_2": 0.0,
+      "synthetic_low_3": 0.022705333787696128,
+      "synthetic_low_4": 0.0,
+      "synthetic_low_5": 0.0,
+      "synthetic_low_6": 0.0,
+      "synthetic_low_7": 0.0,
+      "synthetic_low_8": 0.0
+    },
+    "normalized_shapley_values": {
+      "sepal_length": 0.1826066735430061,
+      "sepal_width": 0.15212511879035548,
+      "petal_length": 0.3261213380152645,
+      "petal_width": 0.32482139899994494,
+      "synthetic_low_1": 0.0,
+      "synthetic_low_2": 0.0,
+      "synthetic_low_3": 0.014325470651428904,
+      "synthetic_low_4": 0.0,
+      "synthetic_low_5": 0.0,
+      "synthetic_low_6": 0.0,
+      "synthetic_low_7": 0.0,
+      "synthetic_low_8": 2.220446049250313e-16
+    },
+    "total_value": 1.5849625007211452
+  }
+}

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Arial,sans-serif;letter-spacing:0;fill:#20242b}.axis{stroke:#59636f}.grid{stroke:#dce1e7}.label{font-size:13px}.title{font-size:21px;font-weight:700}</style>
+<text x="70" y="35" class="title">DTG-Shapley: high-field accuracy and sampling reduction</text>
+<text x="640" y="56" class="label" font-weight="700">Request reduction vs high-field error</text>
+<line x1="640" y1="70" x2="640" y2="530" class="axis"/>
+<line x1="640" y1="530" x2="1140" y2="530" class="axis"/>
+<line x1="640" y1="70.0" x2="1140" y2="70.0" class="grid"/>
+<line x1="640" y1="185.0" x2="1140" y2="185.0" class="grid"/>
+<line x1="640" y1="300.0" x2="1140" y2="300.0" class="grid"/>
+<line x1="640" y1="415.0" x2="1140" y2="415.0" class="grid"/>
+<line x1="640" y1="530.0" x2="1140" y2="530.0" class="grid"/>
+<circle cx="677.4" cy="529.4" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000215 requestReduction=0.056</title></circle>
+<circle cx="833.6" cy="529.8" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000072 requestReduction=0.369</title></circle>
+<circle cx="699.6" cy="528.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000520 requestReduction=0.101</title></circle>
+<circle cx="834.0" cy="528.9" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000426 requestReduction=0.370</title></circle>
+<circle cx="649.2" cy="525.5" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001668 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000593 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000670 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="523.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002299 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="517.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.004808 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="514.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.005927 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="504.2" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.009653 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="508.4" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008076 requestReduction=0.000</title></circle>
+<circle cx="863.2" cy="528.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000514 requestReduction=0.428</title></circle>
+<circle cx="645.0" cy="529.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000107 requestReduction=-0.008</title></circle>
+<circle cx="819.0" cy="528.8" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000454 requestReduction=0.340</title></circle>
+<circle cx="649.2" cy="528.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000496 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.5" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000569 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000680 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.5" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000196 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.1" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000329 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="522.5" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.002790 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.001067 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="516.7" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.004989 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="517.9" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.004530 requestReduction=0.000</title></circle>
+<circle cx="744.4" cy="529.4" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000222 requestReduction=0.190</title></circle>
+<circle cx="810.4" cy="529.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000104 requestReduction=0.322</title></circle>
+<circle cx="666.8" cy="529.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000125 requestReduction=0.035</title></circle>
+<circle cx="674.6" cy="529.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000142 requestReduction=0.051</title></circle>
+<circle cx="649.2" cy="528.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000583 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000300 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000299 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000302 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="522.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.002952 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="523.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.002596 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="513.7" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.006089 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="519.9" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.003792 requestReduction=0.000</title></circle>
+<circle cx="887.2" cy="518.5" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.004303 requestReduction=0.476</title></circle>
+<circle cx="648.0" cy="529.4" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000218 requestReduction=-0.002</title></circle>
+<circle cx="650.0" cy="529.3" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000259 requestReduction=0.002</title></circle>
+<circle cx="804.0" cy="501.9" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.010502 requestReduction=0.310</title></circle>
+<circle cx="649.2" cy="523.3" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002488 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.0" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000369 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="521.1" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.003345 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000307 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="456.9" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.027349 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="432.0" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.036641 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="510.4" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.007341 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="512.2" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.006666 requestReduction=0.000</title></circle>
+<circle cx="703.2" cy="528.4" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000583 requestReduction=0.108</title></circle>
+<circle cx="778.2" cy="528.2" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000689 requestReduction=0.258</title></circle>
+<circle cx="791.6" cy="528.4" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000591 requestReduction=0.285</title></circle>
+<circle cx="676.4" cy="529.2" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000283 requestReduction=0.054</title></circle>
+<circle cx="649.2" cy="529.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000214 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000859 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.1" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001079 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000690 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="506.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008953 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="498.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.011920 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="498.3" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.011866 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="496.2" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.012619 requestReduction=0.000</title></circle>
+<circle cx="853.8" cy="523.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.002384 requestReduction=0.409</title></circle>
+<circle cx="640.0" cy="529.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000105 requestReduction=-0.018</title></circle>
+<circle cx="652.6" cy="529.2" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000316 requestReduction=0.007</title></circle>
+<circle cx="823.6" cy="493.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.013560 requestReduction=0.349</title></circle>
+<circle cx="649.2" cy="528.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000493 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="525.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001519 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="529.3" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000270 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="526.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001169 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="508.9" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.007896 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="462.9" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.025072 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="522.3" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.002882 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="464.7" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.024399 requestReduction=0.000</title></circle>
+<circle cx="660.0" cy="529.3" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000268 requestReduction=0.022</title></circle>
+<circle cx="693.6" cy="527.8" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000806 requestReduction=0.089</title></circle>
+<circle cx="801.6" cy="528.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000750 requestReduction=0.305</title></circle>
+<circle cx="739.6" cy="528.3" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000638 requestReduction=0.181</title></circle>
+<circle cx="649.2" cy="522.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002734 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000776 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="528.5" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000576 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="524.6" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002009 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="502.3" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.010373 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="509.6" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.007634 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="499.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.011560 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="506.6" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008736 requestReduction=0.000</title></circle>
+<circle cx="788.0" cy="527.3" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001024 requestReduction=0.278</title></circle>
+<circle cx="688.4" cy="528.5" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000560 requestReduction=0.078</title></circle>
+<circle cx="694.4" cy="527.9" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000803 requestReduction=0.090</title></circle>
+<circle cx="721.6" cy="527.5" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.000951 requestReduction=0.145</title></circle>
+<circle cx="649.2" cy="525.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001785 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000869 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.0" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001120 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="526.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001356 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="504.7" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.009471 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="501.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.010798 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="501.2" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.010751 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="508.1" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008170 requestReduction=0.000</title></circle>
+<circle cx="665.8" cy="527.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001108 requestReduction=0.033</title></circle>
+<circle cx="765.2" cy="525.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001859 requestReduction=0.232</title></circle>
+<circle cx="742.8" cy="527.1" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001087 requestReduction=0.187</title></circle>
+<circle cx="833.6" cy="526.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001488 requestReduction=0.369</title></circle>
+<circle cx="649.2" cy="526.8" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001191 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="527.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.000843 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="522.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002644 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="526.0" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.001496 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="503.8" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.009788 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="476.5" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.020020 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="490.8" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.014655 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="489.0" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.015319 requestReduction=0.000</title></circle>
+<circle cx="666.7" cy="489.8" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.015040 requestReduction=0.035</title></circle>
+<circle cx="641.1" cy="525.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001637 requestReduction=-0.016</title></circle>
+<circle cx="649.2" cy="522.8" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002688 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="486.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.016307 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="508.2" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008138 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="71.6" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.171399 requestReduction=0.000</title></circle>
+<circle cx="641.1" cy="524.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001995 requestReduction=-0.016</title></circle>
+<circle cx="695.2" cy="489.6" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.015088 requestReduction=0.092</title></circle>
+<circle cx="649.2" cy="454.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.028158 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="521.0" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.003361 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="123.6" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.151943 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="509.4" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.007697 requestReduction=0.000</title></circle>
+<circle cx="641.1" cy="525.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.001882 requestReduction=-0.016</title></circle>
+<circle cx="672.7" cy="432.9" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley low=0 samples=100 highNMAE=0.036319 requestReduction=0.047</title></circle>
+<circle cx="649.2" cy="470.2" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.022357 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="522.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc low=0 samples=100 highNMAE=0.002826 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="508.4" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.008067 requestReduction=0.000</title></circle>
+<circle cx="649.2" cy="70.0" r="5" fill="#4b5563" fill-opacity="0.78"><title>value_audit low=0 samples=0 highNMAE=0.171988 requestReduction=0.000</title></circle>
+<text x="890.0" y="565" text-anchor="middle" class="label">Request reduction relative to MC</text>
+</svg>

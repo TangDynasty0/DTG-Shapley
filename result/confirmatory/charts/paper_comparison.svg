@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="650">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Arial,sans-serif;letter-spacing:0;fill:#20242b}.axis{stroke:#59636f}.grid{stroke:#e2e8f0}.small{font-size:12px}.title{font-size:20px;font-weight:700}.panel{font-size:15px;font-weight:700}</style>
+<text x="55" y="32" class="title">Accuracy-cost comparison against measured MC cost</text>
+<circle cx="55" cy="58" r="5" fill="#2563eb"/>
+<text x="65" y="62" class="small">mc</text>
+<circle cx="139" cy="58" r="5" fill="#0891b2"/>
+<text x="149" y="62" class="small">antithetic_mc</text>
+<circle cx="300" cy="58" r="5" fill="#ea580c"/>
+<text x="310" y="62" class="small">tmc</text>
+<circle cx="391" cy="58" r="5" fill="#7c3aed"/>
+<text x="401" y="62" class="small">stratified</text>
+<circle cx="531" cy="58" r="5" fill="#475569"/>
+<text x="541" y="62" class="small">kernel_shap</text>
+<circle cx="678" cy="58" r="5" fill="#dc2626"/>
+<text x="688" y="62" class="small">dtg_shapley</text>
+<text x="65" y="90" class="panel">Low-contribution target scenarios</text>
+<line x1="65" y1="105" x2="65" y2="555" class="axis"/>
+<line x1="65" y1="555" x2="590" y2="555" class="axis"/>
+<line x1="65" y1="105.0" x2="590" y2="105.0" class="grid"/>
+<line x1="65" y1="217.5" x2="590" y2="217.5" class="grid"/>
+<line x1="65" y1="330.0" x2="590" y2="330.0" class="grid"/>
+<line x1="65" y1="442.5" x2="590" y2="442.5" class="grid"/>
+<line x1="65" y1="555.0" x2="590" y2="555.0" class="grid"/>
+<circle cx="517.4" cy="516.0" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; contextual_tail; synthetic; low=16; calls/MC=1.001; high NMAE=0.001980</title></circle>
+<circle cx="326.6" cy="498.5" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; contextual_tail; synthetic; low=16; calls/MC=0.579; high NMAE=0.002865</title></circle>
+<circle cx="539.6" cy="449.5" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; contextual_tail; synthetic; low=16; calls/MC=1.050; high NMAE=0.005355</title></circle>
+<circle cx="517.1" cy="458.8" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; contextual_tail; synthetic; low=16; calls/MC=1.000; high NMAE=0.004883</title></circle>
+<circle cx="516.5" cy="430.9" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; contextual_tail; synthetic; low=16; calls/MC=0.999; high NMAE=0.006297</title></circle>
+<circle cx="517.1" cy="456.0" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; contextual_tail; synthetic; low=16; calls/MC=1.000; high NMAE=0.005022</title></circle>
+<circle cx="517.5" cy="531.4" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; contextual_tail; synthetic; low=32; calls/MC=1.001; high NMAE=0.001200</title></circle>
+<circle cx="270.0" cy="506.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; contextual_tail; synthetic; low=32; calls/MC=0.453; high NMAE=0.002453</title></circle>
+<circle cx="530.1" cy="502.4" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; contextual_tail; synthetic; low=32; calls/MC=1.029; high NMAE=0.002671</title></circle>
+<circle cx="517.1" cy="454.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; contextual_tail; synthetic; low=32; calls/MC=1.000; high NMAE=0.005089</title></circle>
+<circle cx="514.2" cy="436.8" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; contextual_tail; synthetic; low=32; calls/MC=0.993; high NMAE=0.006000</title></circle>
+<circle cx="514.6" cy="451.4" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; contextual_tail; synthetic; low=32; calls/MC=0.994; high NMAE=0.005258</title></circle>
+<circle cx="520.3" cy="514.8" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; contextual_tail; synthetic; low=8; calls/MC=1.007; high NMAE=0.002040</title></circle>
+<circle cx="430.5" cy="483.2" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; contextual_tail; synthetic; low=8; calls/MC=0.808; high NMAE=0.003645</title></circle>
+<circle cx="551.1" cy="452.2" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; contextual_tail; synthetic; low=8; calls/MC=1.075; high NMAE=0.005216</title></circle>
+<circle cx="517.1" cy="452.3" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; contextual_tail; synthetic; low=8; calls/MC=1.000; high NMAE=0.005212</title></circle>
+<circle cx="508.3" cy="420.0" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; contextual_tail; synthetic; low=8; calls/MC=0.981; high NMAE=0.006852</title></circle>
+<circle cx="517.1" cy="452.3" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; contextual_tail; synthetic; low=8; calls/MC=1.000; high NMAE=0.005212</title></circle>
+<circle cx="517.4" cy="555.0" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; synergy_tail2; synthetic; low=16; calls/MC=1.001; high NMAE=0.000000</title></circle>
+<circle cx="385.5" cy="482.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; synergy_tail2; synthetic; low=16; calls/MC=0.709; high NMAE=0.003705</title></circle>
+<circle cx="542.9" cy="525.8" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; synergy_tail2; synthetic; low=16; calls/MC=1.057; high NMAE=0.001480</title></circle>
+<circle cx="517.1" cy="531.4" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; synergy_tail2; synthetic; low=16; calls/MC=1.000; high NMAE=0.001200</title></circle>
+<circle cx="506.6" cy="483.1" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; synergy_tail2; synthetic; low=16; calls/MC=0.977; high NMAE=0.003647</title></circle>
+<circle cx="517.1" cy="512.2" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; synergy_tail2; synthetic; low=16; calls/MC=1.000; high NMAE=0.002170</title></circle>
+<circle cx="517.4" cy="518.9" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; synergy_tail3; synthetic; low=16; calls/MC=1.001; high NMAE=0.001833</title></circle>
+<circle cx="389.6" cy="498.1" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; synergy_tail3; synthetic; low=16; calls/MC=0.718; high NMAE=0.002890</title></circle>
+<circle cx="542.9" cy="486.8" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; synergy_tail3; synthetic; low=16; calls/MC=1.057; high NMAE=0.003463</title></circle>
+<circle cx="517.1" cy="469.6" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; synergy_tail3; synthetic; low=16; calls/MC=1.000; high NMAE=0.004333</title></circle>
+<circle cx="506.6" cy="482.1" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; synergy_tail3; synthetic; low=16; calls/MC=0.977; high NMAE=0.003697</title></circle>
+<circle cx="517.1" cy="460.4" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; synergy_tail3; synthetic; low=16; calls/MC=1.000; high NMAE=0.004799</title></circle>
+<circle cx="514.9" cy="416.5" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; public_tail; iris; low=8; calls/MC=0.995; high NMAE=0.007027</title></circle>
+<circle cx="465.2" cy="328.9" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; public_tail; iris; low=8; calls/MC=0.885; high NMAE=0.011472</title></circle>
+<circle cx="547.5" cy="138.3" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; public_tail; iris; low=8; calls/MC=1.067; high NMAE=0.021143</title></circle>
+<circle cx="517.1" cy="143.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; public_tail; iris; low=8; calls/MC=1.000; high NMAE=0.020858</title></circle>
+<circle cx="504.4" cy="288.1" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; public_tail; iris; low=8; calls/MC=0.972; high NMAE=0.013544</title></circle>
+<circle cx="456.0" cy="151.5" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; public_tail; iris; low=8; calls/MC=0.865; high NMAE=0.020475</title></circle>
+<line x1="517.1" y1="105" x2="517.1" y2="555" stroke="#64748b" stroke-dasharray="5 4"/>
+<text x="327.5" y="590" text-anchor="middle" class="small">Actual value-function calls / matched MC calls</text>
+<text x="650" y="90" class="panel">General-applicability scenarios</text>
+<line x1="650" y1="105" x2="650" y2="555" class="axis"/>
+<line x1="650" y1="555" x2="1175" y2="555" class="axis"/>
+<line x1="650" y1="105.0" x2="1175" y2="105.0" class="grid"/>
+<line x1="650" y1="217.5" x2="1175" y2="217.5" class="grid"/>
+<line x1="650" y1="330.0" x2="1175" y2="330.0" class="grid"/>
+<line x1="650" y1="442.5" x2="1175" y2="442.5" class="grid"/>
+<line x1="650" y1="555.0" x2="1175" y2="555.0" class="grid"/>
+<circle cx="1105.3" cy="555.0" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; balanced_interaction; synthetic; low=0; calls/MC=1.007; high NMAE=0.000000</title></circle>
+<circle cx="1105.3" cy="555.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; balanced_interaction; synthetic; low=0; calls/MC=1.007; high NMAE=0.000000</title></circle>
+<circle cx="1136.1" cy="480.3" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; balanced_interaction; synthetic; low=0; calls/MC=1.075; high NMAE=0.004208</title></circle>
+<circle cx="1102.1" cy="522.5" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; balanced_interaction; synthetic; low=0; calls/MC=1.000; high NMAE=0.001830</title></circle>
+<circle cx="1093.3" cy="523.4" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; balanced_interaction; synthetic; low=0; calls/MC=0.981; high NMAE=0.001782</title></circle>
+<circle cx="1102.1" cy="522.5" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; balanced_interaction; synthetic; low=0; calls/MC=1.000; high NMAE=0.001830</title></circle>
+<circle cx="1102.1" cy="390.2" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.009287</title></circle>
+<circle cx="1102.1" cy="486.4" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.003866</title></circle>
+<circle cx="1102.1" cy="390.2" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.009287</title></circle>
+<circle cx="1102.1" cy="493.8" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.003450</title></circle>
+<circle cx="1102.1" cy="555.0" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.000000</title></circle>
+<circle cx="1102.1" cy="555.0" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.000000</title></circle>
+<circle cx="1102.1" cy="138.3" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.023480</title></circle>
+<circle cx="1102.1" cy="190.9" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.020519</title></circle>
+<circle cx="1102.1" cy="383.8" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.009647</title></circle>
+<circle cx="1102.1" cy="380.7" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.009823</title></circle>
+<circle cx="1102.1" cy="138.3" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.023480</title></circle>
+<circle cx="1102.1" cy="184.7" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; public_compatibility; iris; low=0; calls/MC=1.000; high NMAE=0.020866</title></circle>
+<circle cx="1104.3" cy="385.9" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; public_compatibility; wine; low=0; calls/MC=1.005; high NMAE=0.009531</title></circle>
+<circle cx="1104.3" cy="535.8" r="5" fill="#0891b2" fill-opacity="0.78"><title>antithetic_mc; public_compatibility; wine; low=0; calls/MC=1.005; high NMAE=0.001079</title></circle>
+<circle cx="1105.2" cy="372.0" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; public_compatibility; wine; low=0; calls/MC=1.007; high NMAE=0.010312</title></circle>
+<circle cx="1127.0" cy="529.7" r="5" fill="#dc2626" fill-opacity="0.78"><title>dtg_shapley; public_compatibility; wine; low=0; calls/MC=1.055; high NMAE=0.001426</title></circle>
+<circle cx="1131.1" cy="523.7" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; public_compatibility; wine; low=0; calls/MC=1.064; high NMAE=0.001761</title></circle>
+<circle cx="1131.1" cy="243.0" r="5" fill="#475569" fill-opacity="0.78"><title>kernel_shap; public_compatibility; wine; low=0; calls/MC=1.064; high NMAE=0.017579</title></circle>
+<circle cx="1102.1" cy="344.7" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; public_compatibility; wine; low=0; calls/MC=1.000; high NMAE=0.011849</title></circle>
+<circle cx="1102.1" cy="522.1" r="5" fill="#2563eb" fill-opacity="0.78"><title>mc; public_compatibility; wine; low=0; calls/MC=1.000; high NMAE=0.001853</title></circle>
+<circle cx="1113.5" cy="474.8" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; public_compatibility; wine; low=0; calls/MC=1.025; high NMAE=0.004519</title></circle>
+<circle cx="1113.5" cy="516.5" r="5" fill="#7c3aed" fill-opacity="0.78"><title>stratified; public_compatibility; wine; low=0; calls/MC=1.025; high NMAE=0.002167</title></circle>
+<circle cx="767.1" cy="344.5" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; public_compatibility; wine; low=0; calls/MC=0.259; high NMAE=0.011862</title></circle>
+<circle cx="1101.6" cy="522.9" r="5" fill="#ea580c" fill-opacity="0.78"><title>tmc; public_compatibility; wine; low=0; calls/MC=0.999; high NMAE=0.001811</title></circle>
+<line x1="1102.1" y1="105" x2="1102.1" y2="555" stroke="#64748b" stroke-dasharray="5 4"/>
+<text x="912.5" y="590" text-anchor="middle" class="small">Actual value-function calls / matched MC calls</text>
+<text x="18" y="335" transform="rotate(-90 18 335)" text-anchor="middle" class="small">Reference-high NMAE (lower is better)</text>
+</svg>

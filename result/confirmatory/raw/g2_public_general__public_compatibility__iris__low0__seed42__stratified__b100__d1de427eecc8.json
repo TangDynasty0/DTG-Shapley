@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "case_id": "g2_public_general__public_compatibility__iris__low0__seed42__stratified__b100__d1de427eecc8",
+  "case": {
+    "experiment": "g2_public_general",
+    "scenario": "public_compatibility",
+    "dataset": "iris",
+    "algorithm": "stratified",
+    "seed": 42,
+    "artificial_low_count": 0,
+    "equivalent_mc_paths": 100,
+    "contribution_threshold": 0.04,
+    "threshold_margin": 0.005,
+    "interaction_order": 0,
+    "reference": false,
+    "enable_dynamic_regrouping": true,
+    "enable_coalition_audit": true,
+    "max_screening_budget_ratio": 0.2,
+    "low_audit_rate": 0.15,
+    "coalition_audits_per_check": 2,
+    "implementation_version": "dtg_paper_confirmatory",
+    "threshold_mode": "relative",
+    "relative_threshold_factor": 0.5,
+    "minimum_inclusion_probability": 0.1,
+    "use_antithetic_sampling": true,
+    "feature_subset_count": 0,
+    "feature_subset_seed": 11,
+    "value_quantifier": "holdout_naive_bayes",
+    "method_variant": "default",
+    "reference_group": "iris_holdout_naive_bayes_unaltered",
+    "dtg_min_adaptive_savings_ratio": 0.05,
+    "dtg_min_context_observations": 1,
+    "tmc_truncation_tolerance_ratio": 0.01
+  },
+  "dataset": {
+    "name": "iris",
+    "sample_count": 150,
+    "feature_count": 4,
+    "feature_names": [
+      "sepal_length",
+      "sepal_width",
+      "petal_length",
+      "petal_width"
+    ],
+    "preprocessing": {},
+    "value_quantifier": "holdout_naive_bayes",
+    "artificial_field_cache": null
+  },
+  "metrics": {
+    "started_at": "2026-08-29T06:00:49.310623+00:00",
+    "ended_at": "2026-08-29T06:00:49.313613+00:00",
+    "runtime_seconds": 0.0031066999999893596,
+    "sample_count": 50,
+    "actual_value_function_calls": 16,
+    "value_function_evaluation_requests": 16,
+    "known_low_capture_ratio": null,
+    "candidate_low_screening_ratio": null,
+    "diagnostics": {
+      "value_evaluations": 16,
+      "marginal_samples_per_item": 50,
+      "total_marginal_samples": 200,
+      "coalition_evaluation_requests": 402,
+      "efficiency_residual": 0.00025601993472412765,
+      "stratum_sample_counts": {
+        "0": 13,
+        "1": 13,
+        "2": 12,
+        "3": 12
+      },
+      "standard_errors": {},
+      "screening_estimates": {},
+      "screening_observation_counts": {},
+      "formal_observation_counts": {
+        "sepal_length": 50,
+        "sepal_width": 50,
+        "petal_length": 50,
+        "petal_width": 50
+      },
+      "total_observation_counts": {
+        "sepal_length": 50,
+        "sepal_width": 50,
+        "petal_length": 50,
+        "petal_width": 50
+      },
+      "low_allocation_weights": {},
+      "corrected_round_counts": {},
+      "inclusion_counts": {},
+      "mean_inclusion_probabilities": {},
+      "formal_stratum_sample_counts": {},
+      "context_observation_counts": {},
+      "formal_sampling_strategy": "coalition_size_stratified",
+      "baseline_mc_marginal_samples": 400,
+      "marginal_sample_reduction_vs_mc": 0.5,
+      "actual_value_function_calls": 16,
+      "value_function_evaluation_requests": 16
+    }
+  },
+  "result": {
+    "shapley_values": {
+      "sepal_length": -0.00012319984869024053,
+      "sepal_width": 0.0360780767267396,
+      "petal_length": 0.45325969428688456,
+      "petal_width": 0.6556547814237212
+    },
+    "normalized_shapley_values": {
+      "sepal_length": -0.00010761039974707535,
+      "sepal_width": 0.03151283301030266,
+      "petal_length": 0.3959051687967912,
+      "petal_width": 0.5726896085926533
+    },
+    "total_value": 1.144869352588655
+  }
+}

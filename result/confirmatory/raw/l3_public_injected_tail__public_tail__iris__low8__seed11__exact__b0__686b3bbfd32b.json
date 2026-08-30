@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "case_id": "l3_public_injected_tail__public_tail__iris__low8__seed11__exact__b0__686b3bbfd32b",
+  "case": {
+    "experiment": "l3_public_injected_tail",
+    "scenario": "public_tail",
+    "dataset": "iris",
+    "algorithm": "exact",
+    "seed": 11,
+    "artificial_low_count": 8,
+    "equivalent_mc_paths": 0,
+    "contribution_threshold": 0.04,
+    "threshold_margin": 0.005,
+    "interaction_order": 0,
+    "reference": true,
+    "enable_dynamic_regrouping": true,
+    "enable_coalition_audit": true,
+    "max_screening_budget_ratio": 0.2,
+    "low_audit_rate": 0.15,
+    "coalition_audits_per_check": 2,
+    "implementation_version": "dtg_paper_confirmatory",
+    "threshold_mode": "relative",
+    "relative_threshold_factor": 0.5,
+    "minimum_inclusion_probability": 0.1,
+    "use_antithetic_sampling": true,
+    "feature_subset_count": 0,
+    "feature_subset_seed": 11,
+    "value_quantifier": "mutual_information",
+    "method_variant": "default",
+    "reference_group": null,
+    "dtg_min_adaptive_savings_ratio": 0.05,
+    "dtg_min_context_observations": 1,
+    "tmc_truncation_tolerance_ratio": 0.01
+  },
+  "dataset": {
+    "name": "iris",
+    "sample_count": 150,
+    "feature_count": 12,
+    "feature_names": [
+      "sepal_length",
+      "sepal_width",
+      "petal_length",
+      "petal_width",
+      "synthetic_low_1",
+      "synthetic_low_2",
+      "synthetic_low_3",
+      "synthetic_low_4",
+      "synthetic_low_5",
+      "synthetic_low_6",
+      "synthetic_low_7",
+      "synthetic_low_8"
+    ],
+    "preprocessing": {
+      "acc_gtmc_artificial_low_fields": {
+        "count": 8,
+        "seed": 11,
+        "range": [
+          1,
+          2
+        ],
+        "independent_of_target": true,
+        "cache_file": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.npz"
+      }
+    },
+    "value_quantifier": "mutual_information",
+    "artificial_field_cache": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.npz"
+  },
+  "metrics": {
+    "started_at": "2026-08-29T05:59:55.435691+00:00",
+    "ended_at": "2026-08-29T06:00:01.801900+00:00",
+    "runtime_seconds": 6.366791700000249,
+    "sample_count": 0,
+    "actual_value_function_calls": 4096,
+    "value_function_evaluation_requests": 4096,
+    "known_low_capture_ratio": null,
+    "candidate_low_screening_ratio": 0.0,
+    "diagnostics": {
+      "value_evaluations": 4096,
+      "standard_errors": {},
+      "screening_estimates": {},
+      "screening_observation_counts": {},
+      "formal_observation_counts": {},
+      "total_observation_counts": {},
+      "low_allocation_weights": {},
+      "corrected_round_counts": {},
+      "inclusion_counts": {},
+      "mean_inclusion_probabilities": {},
+      "formal_stratum_sample_counts": {},
+      "context_observation_counts": {},
+      "actual_value_function_calls": 4096,
+      "value_function_evaluation_requests": 4096
+    }
+  },
+  "result": {
+    "shapley_values": {
+      "sepal_length": 0.28793161700942443,
+      "sepal_width": 0.23661434235607776,
+      "petal_length": 0.520370680405073,
+      "petal_width": 0.5147943344714138,
+      "synthetic_low_1": 0.025251526479156124,
+      "synthetic_low_2": 0.0,
+      "synthetic_low_3": 0.0,
+      "synthetic_low_4": 0.0,
+      "synthetic_low_5": 0.0,
+      "synthetic_low_6": 0.0,
+      "synthetic_low_7": 0.0,
+      "synthetic_low_8": 0.0
+    },
+    "normalized_shapley_values": {
+      "sepal_length": 0.1816646241651887,
+      "sepal_width": 0.14928702871419366,
+      "petal_length": 0.32831734515378663,
+      "petal_width": 0.3247990625880338,
+      "synthetic_low_1": 0.01593193937879722,
+      "synthetic_low_2": 0.0,
+      "synthetic_low_3": 0.0,
+      "synthetic_low_4": 0.0,
+      "synthetic_low_5": 0.0,
+      "synthetic_low_6": 0.0,
+      "synthetic_low_7": 0.0,
+      "synthetic_low_8": 0.0
+    },
+    "total_value": 1.584962500721145
+  }
+}

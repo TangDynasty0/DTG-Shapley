@@ -1,0 +1,1886 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "case_id": "g2_public_general__public_compatibility__iris__low0__seed23__dtg_shapley__b100__bf099bae994f",
+  "case": {
+    "experiment": "g2_public_general",
+    "scenario": "public_compatibility",
+    "dataset": "iris",
+    "algorithm": "dtg_shapley",
+    "seed": 23,
+    "artificial_low_count": 0,
+    "equivalent_mc_paths": 100,
+    "contribution_threshold": 0.04,
+    "threshold_margin": 0.005,
+    "interaction_order": 0,
+    "reference": false,
+    "enable_dynamic_regrouping": true,
+    "enable_coalition_audit": true,
+    "max_screening_budget_ratio": 0.2,
+    "low_audit_rate": 0.15,
+    "coalition_audits_per_check": 2,
+    "implementation_version": "dtg_paper_confirmatory",
+    "threshold_mode": "relative",
+    "relative_threshold_factor": 0.5,
+    "minimum_inclusion_probability": 0.1,
+    "use_antithetic_sampling": true,
+    "feature_subset_count": 0,
+    "feature_subset_seed": 11,
+    "value_quantifier": "mutual_information",
+    "method_variant": "default",
+    "reference_group": "iris_mutual_information_unaltered",
+    "dtg_min_adaptive_savings_ratio": 0.05,
+    "dtg_min_context_observations": 1,
+    "tmc_truncation_tolerance_ratio": 0.01
+  },
+  "dataset": {
+    "name": "iris",
+    "sample_count": 150,
+    "feature_count": 4,
+    "feature_names": [
+      "sepal_length",
+      "sepal_width",
+      "petal_length",
+      "petal_width"
+    ],
+    "preprocessing": {},
+    "value_quantifier": "mutual_information",
+    "artificial_field_cache": null
+  },
+  "metrics": {
+    "started_at": "2026-08-29T06:00:50.152233+00:00",
+    "ended_at": "2026-08-29T06:00:50.173329+00:00",
+    "runtime_seconds": 0.02102539999941655,
+    "sample_count": 100,
+    "actual_value_function_calls": 16,
+    "value_function_evaluation_requests": 16,
+    "known_low_capture_ratio": null,
+    "candidate_low_screening_ratio": null,
+    "diagnostics": {
+      "algorithm_version": "dtg_shapley",
+      "mode": "uniform_mc_natural_fallback",
+      "estimation_target": "threshold_selective_classical_shapley",
+      "estimator": "predictable_horvitz_thompson_antithetic",
+      "all_sampling_paths_reused": true,
+      "fixed_sampling_horizon": true,
+      "predictable_inclusion_probabilities": true,
+      "threshold_mode": "relative",
+      "fixed_contribution_threshold": 0.04,
+      "relative_threshold_factor": 0.5,
+      "effective_contribution_threshold": 0.125,
+      "threshold_margin_ratio": 0.2,
+      "minimum_inclusion_probability": 0.1,
+      "min_adaptive_savings_ratio": 0.05,
+      "paired_reverse_permutations": true,
+      "target_permutation_paths": 100,
+      "completed_permutation_paths": 100,
+      "initial_full_paths": 8,
+      "adaptive_rounds": 0,
+      "full_path_rounds": 50,
+      "natural_fallback_rounds": 46,
+      "group_checks": 24,
+      "group_history": [
+        {
+          "check": 1,
+          "completed_paths": 8,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.8086218576736744,
+            "1": 0.8985833962953748,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.15165559797229267,
+              "standard_error": 0.0756107636309129,
+              "lower": 0.003458501255703378,
+              "upper": 0.299852694688882,
+              "observed_marginals": 8.0,
+              "corrected_rounds": 4.0,
+              "early_context_observations": 4.0,
+              "middle_context_observations": 3.0,
+              "late_context_observations": 1.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2214303393288859,
+              "standard_error": 0.019226803003816847,
+              "lower": 0.18374580544140487,
+              "upper": 0.2591148732163669,
+              "observed_marginals": 8.0,
+              "corrected_rounds": 4.0,
+              "early_context_observations": 4.0,
+              "middle_context_observations": 2.0,
+              "late_context_observations": 2.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6626325222193006,
+              "standard_error": 0.0,
+              "lower": 0.6626325222193006,
+              "upper": 0.6626325222193006,
+              "observed_marginals": 8.0,
+              "corrected_rounds": 4.0,
+              "early_context_observations": 4.0,
+              "middle_context_observations": 0.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 0.0
+            },
+            "3": {
+              "mean": 0.549244041200676,
+              "standard_error": 0.06763026919477882,
+              "lower": 0.4166887135789096,
+              "upper": 0.6817993688224425,
+              "observed_marginals": 8.0,
+              "corrected_rounds": 4.0,
+              "early_context_observations": 4.0,
+              "middle_context_observations": 3.0,
+              "late_context_observations": 1.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 2,
+          "completed_paths": 12,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.900809478329975,
+            "1": 0.9935835538482144,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2270902476553931,
+              "standard_error": 0.06754960828801856,
+              "lower": 0.09469301541087671,
+              "upper": 0.3594874798999095,
+              "observed_marginals": 12.0,
+              "corrected_rounds": 6.0,
+              "early_context_observations": 6.0,
+              "middle_context_observations": 3.0,
+              "late_context_observations": 3.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.23253093921879545,
+              "standard_error": 0.01404127161853143,
+              "lower": 0.20501004684647384,
+              "upper": 0.26005183159111706,
+              "observed_marginals": 12.0,
+              "corrected_rounds": 6.0,
+              "early_context_observations": 6.0,
+              "middle_context_observations": 2.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6404313224394814,
+              "standard_error": 0.01404127161853143,
+              "lower": 0.6129104300671598,
+              "upper": 0.667952214811803,
+              "observed_marginals": 12.0,
+              "corrected_rounds": 6.0,
+              "early_context_observations": 6.0,
+              "middle_context_observations": 2.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.4849099914074852,
+              "standard_error": 0.05903464499478593,
+              "lower": 0.36920208721770476,
+              "upper": 0.6006178955972656,
+              "observed_marginals": 12.0,
+              "corrected_rounds": 6.0,
+              "early_context_observations": 6.0,
+              "middle_context_observations": 5.0,
+              "late_context_observations": 1.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 3,
+          "completed_paths": 16,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9908823797234749,
+            "1": 0.8953503534694182,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.19119642233528844,
+              "standard_error": 0.05474115846785978,
+              "lower": 0.08390375173828328,
+              "upper": 0.2984890929322936,
+              "observed_marginals": 16.0,
+              "corrected_rounds": 8.0,
+              "early_context_observations": 8.0,
+              "middle_context_observations": 5.0,
+              "late_context_observations": 3.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.21595984076454922,
+              "standard_error": 0.01494343534530955,
+              "lower": 0.1866707074877425,
+              "upper": 0.24524897404135593,
+              "observed_marginals": 16.0,
+              "corrected_rounds": 8.0,
+              "early_context_observations": 8.0,
+              "middle_context_observations": 4.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6459816223844363,
+              "standard_error": 0.010900572697484791,
+              "lower": 0.6246164998973661,
+              "upper": 0.6673467448715066,
+              "observed_marginals": 16.0,
+              "corrected_rounds": 8.0,
+              "early_context_observations": 8.0,
+              "middle_context_observations": 2.0,
+              "late_context_observations": 6.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5318246152368813,
+              "standard_error": 0.05301216935543836,
+              "lower": 0.4279207633002221,
+              "upper": 0.6357284671735405,
+              "observed_marginals": 16.0,
+              "corrected_rounds": 8.0,
+              "early_context_observations": 8.0,
+              "middle_context_observations": 5.0,
+              "late_context_observations": 3.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 4,
+          "completed_paths": 20,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9934420876252276,
+            "1": 0.978957046502012,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.20374803275078196,
+              "standard_error": 0.05250250162709824,
+              "lower": 0.10084312956166941,
+              "upper": 0.3066529359398945,
+              "observed_marginals": 20.0,
+              "corrected_rounds": 10.0,
+              "early_context_observations": 10.0,
+              "middle_context_observations": 7.0,
+              "late_context_observations": 3.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.22371430041136228,
+              "standard_error": 0.01287133608365292,
+              "lower": 0.19848648168740257,
+              "upper": 0.248942119135322,
+              "observed_marginals": 20.0,
+              "corrected_rounds": 10.0,
+              "early_context_observations": 10.0,
+              "middle_context_observations": 4.0,
+              "late_context_observations": 6.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6426514424174636,
+              "standard_error": 0.010173867850985804,
+              "lower": 0.6227106614295315,
+              "upper": 0.6625922234053958,
+              "observed_marginals": 20.0,
+              "corrected_rounds": 10.0,
+              "early_context_observations": 10.0,
+              "middle_context_observations": 3.0,
+              "late_context_observations": 7.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5148487251415477,
+              "standard_error": 0.054844755264004647,
+              "lower": 0.40735300482409853,
+              "upper": 0.6223444454589968,
+              "observed_marginals": 20.0,
+              "corrected_rounds": 10.0,
+              "early_context_observations": 10.0,
+              "middle_context_observations": 6.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 5,
+          "completed_paths": 24,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.7902208221004778,
+            "1": 0.9971909746802355,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.23278328512925062,
+              "standard_error": 0.047567248550850955,
+              "lower": 0.13955147796958273,
+              "upper": 0.3260150922889185,
+              "observed_marginals": 24.0,
+              "corrected_rounds": 12.0,
+              "early_context_observations": 12.0,
+              "middle_context_observations": 7.0,
+              "late_context_observations": 5.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24027001512361937,
+              "standard_error": 0.015412489452936957,
+              "lower": 0.21006153579586292,
+              "upper": 0.2704784944513758,
+              "observed_marginals": 24.0,
+              "corrected_rounds": 12.0,
+              "early_context_observations": 12.0,
+              "middle_context_observations": 6.0,
+              "late_context_observations": 6.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6459816223844365,
+              "standard_error": 0.008695648838418902,
+              "lower": 0.6289381506611355,
+              "upper": 0.6630250941077375,
+              "observed_marginals": 24.0,
+              "corrected_rounds": 12.0,
+              "early_context_observations": 12.0,
+              "middle_context_observations": 3.0,
+              "late_context_observations": 9.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.465927578083849,
+              "standard_error": 0.05602434292095236,
+              "lower": 0.35611986595878237,
+              "upper": 0.5757352902089157,
+              "observed_marginals": 24.0,
+              "corrected_rounds": 12.0,
+              "early_context_observations": 12.0,
+              "middle_context_observations": 8.0,
+              "late_context_observations": 4.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 6,
+          "completed_paths": 28,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9115974201205173,
+            "1": 0.9997963248720964,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.25352275111387107,
+              "standard_error": 0.042890060807419916,
+              "lower": 0.16945823193132803,
+              "upper": 0.3375872702964141,
+              "observed_marginals": 28.0,
+              "corrected_rounds": 14.0,
+              "early_context_observations": 14.0,
+              "middle_context_observations": 7.0,
+              "late_context_observations": 7.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2520955256323744,
+              "standard_error": 0.015389218505219793,
+              "lower": 0.22193265736214363,
+              "upper": 0.2822583939026052,
+              "observed_marginals": 28.0,
+              "corrected_rounds": 14.0,
+              "early_context_observations": 14.0,
+              "middle_context_observations": 8.0,
+              "late_context_observations": 6.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.6161284192230089,
+              "standard_error": 0.032024613615626134,
+              "lower": 0.5533601765363817,
+              "upper": 0.678896661909636,
+              "observed_marginals": 28.0,
+              "corrected_rounds": 14.0,
+              "early_context_observations": 14.0,
+              "middle_context_observations": 4.0,
+              "late_context_observations": 10.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.463215804751901,
+              "standard_error": 0.05328450709924199,
+              "lower": 0.3587781708373867,
+              "upper": 0.5676534386664153,
+              "observed_marginals": 28.0,
+              "corrected_rounds": 14.0,
+              "early_context_observations": 14.0,
+              "middle_context_observations": 9.0,
+              "late_context_observations": 5.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 7,
+          "completed_paths": 32,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9768472485066455,
+            "1": 0.999977112476657,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.27761690681312273,
+              "standard_error": 0.040815571246154314,
+              "lower": 0.19761838717066027,
+              "upper": 0.3576154264555852,
+              "observed_marginals": 32.0,
+              "corrected_rounds": 16.0,
+              "early_context_observations": 16.0,
+              "middle_context_observations": 9.0,
+              "late_context_observations": 7.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2524251023031545,
+              "standard_error": 0.013403182137125434,
+              "lower": 0.22615486531438866,
+              "upper": 0.27869533929192036,
+              "observed_marginals": 32.0,
+              "corrected_rounds": 16.0,
+              "early_context_observations": 16.0,
+              "middle_context_observations": 8.0,
+              "late_context_observations": 8.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5937385168519382,
+              "standard_error": 0.03789310854460885,
+              "lower": 0.5194680241045049,
+              "upper": 0.6680090095993716,
+              "observed_marginals": 32.0,
+              "corrected_rounds": 16.0,
+              "early_context_observations": 16.0,
+              "middle_context_observations": 5.0,
+              "late_context_observations": 11.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.4611819747529399,
+              "standard_error": 0.050786173219531716,
+              "lower": 0.36164107524265776,
+              "upper": 0.5607228742632221,
+              "observed_marginals": 32.0,
+              "corrected_rounds": 16.0,
+              "early_context_observations": 16.0,
+              "middle_context_observations": 10.0,
+              "late_context_observations": 6.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 8,
+          "completed_paths": 36,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.97375918083174,
+            "1": 0.9999815774217385,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2711923893416215,
+              "standard_error": 0.03859431110337694,
+              "lower": 0.19554753957900267,
+              "upper": 0.3468372391042403,
+              "observed_marginals": 36.0,
+              "corrected_rounds": 18.0,
+              "early_context_observations": 18.0,
+              "middle_context_observations": 10.0,
+              "late_context_observations": 8.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24898123975045797,
+              "standard_error": 0.012398708149460714,
+              "lower": 0.22467977177751497,
+              "upper": 0.27328270772340096,
+              "observed_marginals": 36.0,
+              "corrected_rounds": 18.0,
+              "early_context_observations": 18.0,
+              "middle_context_observations": 9.0,
+              "late_context_observations": 9.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5976932063738976,
+              "standard_error": 0.03377565157986032,
+              "lower": 0.5314929292773714,
+              "upper": 0.6638934834704238,
+              "observed_marginals": 36.0,
+              "corrected_rounds": 18.0,
+              "early_context_observations": 18.0,
+              "middle_context_observations": 6.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.4670956652551784,
+              "standard_error": 0.04693493204445187,
+              "lower": 0.37510319844805273,
+              "upper": 0.5590881320623041,
+              "observed_marginals": 36.0,
+              "corrected_rounds": 18.0,
+              "early_context_observations": 18.0,
+              "middle_context_observations": 11.0,
+              "late_context_observations": 7.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 9,
+          "completed_paths": 40,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9918976115286594,
+            "1": 0.999999133415864,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2818691051096187,
+              "standard_error": 0.035404132478346846,
+              "lower": 0.2124770054520589,
+              "upper": 0.35126120476717854,
+              "observed_marginals": 40.0,
+              "corrected_rounds": 20.0,
+              "early_context_observations": 20.0,
+              "middle_context_observations": 10.0,
+              "late_context_observations": 10.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.25638797464390267,
+              "standard_error": 0.012238367929118704,
+              "lower": 0.23240077350283,
+              "upper": 0.28037517578497534,
+              "observed_marginals": 40.0,
+              "corrected_rounds": 20.0,
+              "early_context_observations": 20.0,
+              "middle_context_observations": 11.0,
+              "late_context_observations": 9.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5816248057619522,
+              "standard_error": 0.03617827773099161,
+              "lower": 0.5107153814092087,
+              "upper": 0.6525342301146957,
+              "observed_marginals": 40.0,
+              "corrected_rounds": 20.0,
+              "early_context_observations": 20.0,
+              "middle_context_observations": 7.0,
+              "late_context_observations": 13.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.4650806152056818,
+              "standard_error": 0.04520789185053777,
+              "lower": 0.37647314717862773,
+              "upper": 0.5536880832327358,
+              "observed_marginals": 40.0,
+              "corrected_rounds": 20.0,
+              "early_context_observations": 20.0,
+              "middle_context_observations": 12.0,
+              "late_context_observations": 8.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 10,
+          "completed_paths": 44,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9720400142861012,
+            "1": 0.999999212769135,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.26284227275840805,
+              "standard_error": 0.03469707731163123,
+              "lower": 0.19483600122761086,
+              "upper": 0.33084854428920524,
+              "observed_marginals": 44.0,
+              "corrected_rounds": 22.0,
+              "early_context_observations": 22.0,
+              "middle_context_observations": 12.0,
+              "late_context_observations": 10.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.25321000779708297,
+              "standard_error": 0.011524058279129301,
+              "lower": 0.23062285356998954,
+              "upper": 0.2757971620241764,
+              "observed_marginals": 44.0,
+              "corrected_rounds": 22.0,
+              "early_context_observations": 22.0,
+              "middle_context_observations": 12.0,
+              "late_context_observations": 10.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5889891436217112,
+              "standard_error": 0.03320215921972075,
+              "lower": 0.5239129115510585,
+              "upper": 0.6540653756923639,
+              "observed_marginals": 44.0,
+              "corrected_rounds": 22.0,
+              "early_context_observations": 22.0,
+              "middle_context_observations": 7.0,
+              "late_context_observations": 15.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.4799210765439532,
+              "standard_error": 0.04235987388677116,
+              "lower": 0.3968957237258817,
+              "upper": 0.5629464293620247,
+              "observed_marginals": 44.0,
+              "corrected_rounds": 22.0,
+              "early_context_observations": 22.0,
+              "middle_context_observations": 13.0,
+              "late_context_observations": 9.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 11,
+          "completed_paths": 48,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9729341445178155,
+            "1": 0.9999982882803552,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2601668539200644,
+              "standard_error": 0.03300840808597506,
+              "lower": 0.19547037407155327,
+              "upper": 0.3248633337685755,
+              "observed_marginals": 48.0,
+              "corrected_rounds": 24.0,
+              "early_context_observations": 24.0,
+              "middle_context_observations": 13.0,
+              "late_context_observations": 11.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2496499523306771,
+              "standard_error": 0.011149201852647107,
+              "lower": 0.22779751669948878,
+              "upper": 0.27150238796186543,
+              "observed_marginals": 48.0,
+              "corrected_rounds": 24.0,
+              "early_context_observations": 24.0,
+              "middle_context_observations": 13.0,
+              "late_context_observations": 11.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5828575668112344,
+              "standard_error": 0.03192425754572033,
+              "lower": 0.5202860220216226,
+              "upper": 0.6454291116008462,
+              "observed_marginals": 48.0,
+              "corrected_rounds": 24.0,
+              "early_context_observations": 24.0,
+              "middle_context_observations": 8.0,
+              "late_context_observations": 16.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.49228812765917934,
+              "standard_error": 0.03977486171874996,
+              "lower": 0.4143293986904294,
+              "upper": 0.5702468566279293,
+              "observed_marginals": 48.0,
+              "corrected_rounds": 24.0,
+              "early_context_observations": 24.0,
+              "middle_context_observations": 14.0,
+              "late_context_observations": 10.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 12,
+          "completed_paths": 52,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.971541927149374,
+            "1": 0.9999998621692696,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2570614228161834,
+              "standard_error": 0.03173143199911823,
+              "lower": 0.19486781609791165,
+              "upper": 0.3192550295344551,
+              "observed_marginals": 52.0,
+              "corrected_rounds": 26.0,
+              "early_context_observations": 26.0,
+              "middle_context_observations": 14.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2526684455238373,
+              "standard_error": 0.010654900648339632,
+              "lower": 0.23178484025309165,
+              "upper": 0.273552050794583,
+              "observed_marginals": 52.0,
+              "corrected_rounds": 26.0,
+              "early_context_observations": 26.0,
+              "middle_context_observations": 14.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5864324249449526,
+              "standard_error": 0.029581194535826544,
+              "lower": 0.5284532836547327,
+              "upper": 0.6444115662351726,
+              "observed_marginals": 52.0,
+              "corrected_rounds": 26.0,
+              "early_context_observations": 26.0,
+              "middle_context_observations": 9.0,
+              "late_context_observations": 17.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.48880020743618185,
+              "standard_error": 0.03880708307637652,
+              "lower": 0.41273832460648385,
+              "upper": 0.5648620902658799,
+              "observed_marginals": 52.0,
+              "corrected_rounds": 26.0,
+              "early_context_observations": 26.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 11.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 13,
+          "completed_paths": 56,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9757386302594685,
+            "1": 0.9999997115529232,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2576209977251295,
+              "standard_error": 0.030868946011192822,
+              "lower": 0.19711786354319155,
+              "upper": 0.3181241319070674,
+              "observed_marginals": 56.0,
+              "corrected_rounds": 28.0,
+              "early_context_observations": 28.0,
+              "middle_context_observations": 16.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24965565242929272,
+              "standard_error": 0.010351707928241095,
+              "lower": 0.22936630488994017,
+              "upper": 0.26994499996864524,
+              "observed_marginals": 56.0,
+              "corrected_rounds": 28.0,
+              "early_context_observations": 28.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 13.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5757593374670592,
+              "standard_error": 0.03068997880955536,
+              "lower": 0.5156069790003307,
+              "upper": 0.6359116959337877,
+              "observed_marginals": 56.0,
+              "corrected_rounds": 28.0,
+              "early_context_observations": 28.0,
+              "middle_context_observations": 10.0,
+              "late_context_observations": 18.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5019265130996738,
+              "standard_error": 0.037118615580904984,
+              "lower": 0.42917402656110004,
+              "upper": 0.5746789996382476,
+              "observed_marginals": 56.0,
+              "corrected_rounds": 28.0,
+              "early_context_observations": 28.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 13.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 14,
+          "completed_paths": 60,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.977554507003062,
+            "1": 0.9999999653650017,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.25737656283763793,
+              "standard_error": 0.03021734395887718,
+              "lower": 0.19815056867823866,
+              "upper": 0.3166025569970372,
+              "observed_marginals": 60.0,
+              "corrected_rounds": 30.0,
+              "early_context_observations": 30.0,
+              "middle_context_observations": 18.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2499940848672475,
+              "standard_error": 0.00965255283083078,
+              "lower": 0.23107508131881918,
+              "upper": 0.26891308841567585,
+              "observed_marginals": 60.0,
+              "corrected_rounds": 30.0,
+              "early_context_observations": 30.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 15.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5642892083415696,
+              "standard_error": 0.031096610789848027,
+              "lower": 0.5033398511934675,
+              "upper": 0.6252385654896717,
+              "observed_marginals": 60.0,
+              "corrected_rounds": 30.0,
+              "early_context_observations": 30.0,
+              "middle_context_observations": 12.0,
+              "late_context_observations": 18.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5133026446747002,
+              "standard_error": 0.03549267921853067,
+              "lower": 0.44373699340638006,
+              "upper": 0.5828682959430204,
+              "observed_marginals": 60.0,
+              "corrected_rounds": 30.0,
+              "early_context_observations": 30.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 15.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 15,
+          "completed_paths": 64,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9527909602923793,
+            "1": 0.9999999309665593,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.24582639948817941,
+              "standard_error": 0.029420835450323517,
+              "lower": 0.18816156200554532,
+              "upper": 0.3034912369708135,
+              "observed_marginals": 64.0,
+              "corrected_rounds": 32.0,
+              "early_context_observations": 32.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 12.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24752503845055784,
+              "standard_error": 0.009413253498148413,
+              "lower": 0.22907506159418695,
+              "upper": 0.26597501530692874,
+              "observed_marginals": 64.0,
+              "corrected_rounds": 32.0,
+              "early_context_observations": 32.0,
+              "middle_context_observations": 16.0,
+              "late_context_observations": 16.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5683543029795697,
+              "standard_error": 0.02929685596566987,
+              "lower": 0.5109324652868568,
+              "upper": 0.6257761406722826,
+              "observed_marginals": 64.0,
+              "corrected_rounds": 32.0,
+              "early_context_observations": 32.0,
+              "middle_context_observations": 13.0,
+              "late_context_observations": 19.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5232567598028482,
+              "standard_error": 0.03395214044080138,
+              "lower": 0.45671056453887754,
+              "upper": 0.5898029550668189,
+              "observed_marginals": 64.0,
+              "corrected_rounds": 32.0,
+              "early_context_observations": 32.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 17.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 16,
+          "completed_paths": 68,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9779264711805651,
+            "1": 0.9999999939364658,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2535989375783802,
+              "standard_error": 0.02818839712179387,
+              "lower": 0.19834967921966423,
+              "upper": 0.30884819593709617,
+              "observed_marginals": 68.0,
+              "corrected_rounds": 34.0,
+              "early_context_observations": 34.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 14.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24995829288533447,
+              "standard_error": 0.00912650792875652,
+              "lower": 0.23207033734497168,
+              "upper": 0.26784624842569726,
+              "observed_marginals": 68.0,
+              "corrected_rounds": 34.0,
+              "early_context_observations": 34.0,
+              "middle_context_observations": 17.0,
+              "late_context_observations": 17.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5519679851531911,
+              "standard_error": 0.030000044144111247,
+              "lower": 0.49316789863073307,
+              "upper": 0.6107680716756492,
+              "observed_marginals": 68.0,
+              "corrected_rounds": 34.0,
+              "early_context_observations": 34.0,
+              "middle_context_observations": 15.0,
+              "late_context_observations": 19.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5294372851042494,
+              "standard_error": 0.03226755496059624,
+              "lower": 0.46619287738148074,
+              "upper": 0.592681692827018,
+              "observed_marginals": 68.0,
+              "corrected_rounds": 34.0,
+              "early_context_observations": 34.0,
+              "middle_context_observations": 16.0,
+              "late_context_observations": 18.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 17,
+          "completed_paths": 72,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.97976105639198,
+            "1": 0.9999999993421467,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.25361868962473444,
+              "standard_error": 0.027681587575464454,
+              "lower": 0.1993627779768241,
+              "upper": 0.30787460127264477,
+              "observed_marginals": 72.0,
+              "corrected_rounds": 36.0,
+              "early_context_observations": 36.0,
+              "middle_context_observations": 22.0,
+              "late_context_observations": 14.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.25022350655829456,
+              "standard_error": 0.00861421665175013,
+              "lower": 0.23333964192086432,
+              "upper": 0.2671073711957248,
+              "observed_marginals": 72.0,
+              "corrected_rounds": 36.0,
+              "early_context_observations": 36.0,
+              "middle_context_observations": 17.0,
+              "late_context_observations": 19.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5437312860104979,
+              "standard_error": 0.029884674549260012,
+              "lower": 0.4851573238939483,
+              "upper": 0.6023052481270476,
+              "observed_marginals": 72.0,
+              "corrected_rounds": 36.0,
+              "early_context_observations": 36.0,
+              "middle_context_observations": 17.0,
+              "late_context_observations": 19.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5373890185276282,
+              "standard_error": 0.030949494253794212,
+              "lower": 0.4767280097901916,
+              "upper": 0.5980500272650648,
+              "observed_marginals": 72.0,
+              "corrected_rounds": 36.0,
+              "early_context_observations": 36.0,
+              "middle_context_observations": 16.0,
+              "late_context_observations": 20.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 18,
+          "completed_paths": 76,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.982732476828286,
+            "1": 0.9999999985353913,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.25421220446245524,
+              "standard_error": 0.027086333993753355,
+              "lower": 0.20112298983469867,
+              "upper": 0.3073014190902118,
+              "observed_marginals": 76.0,
+              "corrected_rounds": 38.0,
+              "early_context_observations": 38.0,
+              "middle_context_observations": 24.0,
+              "late_context_observations": 14.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2481322347499745,
+              "standard_error": 0.008450518086392899,
+              "lower": 0.23156921930064442,
+              "upper": 0.26469525019930457,
+              "observed_marginals": 76.0,
+              "corrected_rounds": 38.0,
+              "early_context_observations": 38.0,
+              "middle_context_observations": 18.0,
+              "late_context_observations": 20.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5499892458109613,
+              "standard_error": 0.02862527063863888,
+              "lower": 0.4938837153592291,
+              "upper": 0.6060947762626935,
+              "observed_marginals": 76.0,
+              "corrected_rounds": 38.0,
+              "early_context_observations": 38.0,
+              "middle_context_observations": 17.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5326288156977642,
+              "standard_error": 0.03068942982938001,
+              "lower": 0.4724775332321794,
+              "upper": 0.5927800981633491,
+              "observed_marginals": 76.0,
+              "corrected_rounds": 38.0,
+              "early_context_observations": 38.0,
+              "middle_context_observations": 17.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 19,
+          "completed_paths": 80,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9923869332269154,
+            "1": 0.999999999880382,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2603995715904121,
+              "standard_error": 0.026074778693984293,
+              "lower": 0.2092930053502029,
+              "upper": 0.3115061378306213,
+              "observed_marginals": 80.0,
+              "corrected_rounds": 40.0,
+              "early_context_observations": 40.0,
+              "middle_context_observations": 24.0,
+              "late_context_observations": 16.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2501701412045638,
+              "standard_error": 0.008238983404028394,
+              "lower": 0.23402173373266816,
+              "upper": 0.2663185486764595,
+              "observed_marginals": 80.0,
+              "corrected_rounds": 40.0,
+              "early_context_observations": 40.0,
+              "middle_context_observations": 19.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5539563196478918,
+              "standard_error": 0.02734236470669092,
+              "lower": 0.5003652848227776,
+              "upper": 0.607547354473006,
+              "observed_marginals": 80.0,
+              "corrected_rounds": 40.0,
+              "early_context_observations": 40.0,
+              "middle_context_observations": 18.0,
+              "late_context_observations": 22.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5204364682782875,
+              "standard_error": 0.030448641458908944,
+              "lower": 0.460757131018826,
+              "upper": 0.580115805537749,
+              "observed_marginals": 80.0,
+              "corrected_rounds": 40.0,
+              "early_context_observations": 40.0,
+              "middle_context_observations": 19.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 20,
+          "completed_paths": 84,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9968954985944746,
+            "1": 0.9999999999032539,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2659976656585637,
+              "standard_error": 0.025124073566700524,
+              "lower": 0.21675448146783066,
+              "upper": 0.31524084984929673,
+              "observed_marginals": 84.0,
+              "corrected_rounds": 42.0,
+              "early_context_observations": 42.0,
+              "middle_context_observations": 24.0,
+              "late_context_observations": 18.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2488015792104839,
+              "standard_error": 0.00798101077808624,
+              "lower": 0.23315879808543488,
+              "upper": 0.2644443603355329,
+              "observed_marginals": 84.0,
+              "corrected_rounds": 42.0,
+              "early_context_observations": 42.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 22.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5521207911835155,
+              "standard_error": 0.02653468973865897,
+              "lower": 0.5001127992957439,
+              "upper": 0.6041287830712871,
+              "observed_marginals": 84.0,
+              "corrected_rounds": 42.0,
+              "early_context_observations": 42.0,
+              "middle_context_observations": 19.0,
+              "late_context_observations": 23.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.518042464668592,
+              "standard_error": 0.029287680096288626,
+              "lower": 0.46063861167986636,
+              "upper": 0.5754463176573178,
+              "observed_marginals": 84.0,
+              "corrected_rounds": 42.0,
+              "early_context_observations": 42.0,
+              "middle_context_observations": 21.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 21,
+          "completed_paths": 88,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9973006924447043,
+            "1": 0.9999999999899345,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.26594756592596663,
+              "standard_error": 0.02468361483770565,
+              "lower": 0.21756768084406355,
+              "upper": 0.3143274510078697,
+              "observed_marginals": 88.0,
+              "corrected_rounds": 44.0,
+              "early_context_observations": 44.0,
+              "middle_context_observations": 26.0,
+              "late_context_observations": 18.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.24907115010994446,
+              "standard_error": 0.007616348263260796,
+              "lower": 0.2341431075139533,
+              "upper": 0.26399919270593564,
+              "observed_marginals": 88.0,
+              "corrected_rounds": 44.0,
+              "early_context_observations": 44.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 24.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5571440516851421,
+              "standard_error": 0.02555678079997628,
+              "lower": 0.5070527613171887,
+              "upper": 0.6072353420530956,
+              "observed_marginals": 88.0,
+              "corrected_rounds": 44.0,
+              "early_context_observations": 44.0,
+              "middle_context_observations": 19.0,
+              "late_context_observations": 25.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.512799733000102,
+              "standard_error": 0.02879056033102816,
+              "lower": 0.45637023475128674,
+              "upper": 0.5692292312489171,
+              "observed_marginals": 88.0,
+              "corrected_rounds": 44.0,
+              "early_context_observations": 44.0,
+              "middle_context_observations": 23.0,
+              "late_context_observations": 21.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 22,
+          "completed_paths": 92,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.999087768407091,
+            "1": 0.9999999999990647,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.27230279227113063,
+              "standard_error": 0.02403667175556062,
+              "lower": 0.2251909156302318,
+              "upper": 0.31941466891202946,
+              "observed_marginals": 92.0,
+              "corrected_rounds": 46.0,
+              "early_context_observations": 46.0,
+              "middle_context_observations": 27.0,
+              "late_context_observations": 19.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2493172800616258,
+              "standard_error": 0.007283555777899739,
+              "lower": 0.2350415107369423,
+              "upper": 0.2635930493863093,
+              "observed_marginals": 92.0,
+              "corrected_rounds": 46.0,
+              "early_context_observations": 46.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 26.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5455198276958374,
+              "standard_error": 0.025864712009797886,
+              "lower": 0.49482499215663356,
+              "upper": 0.5962146632350412,
+              "observed_marginals": 92.0,
+              "corrected_rounds": 46.0,
+              "early_context_observations": 46.0,
+              "middle_context_observations": 21.0,
+              "late_context_observations": 25.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5178226006925614,
+              "standard_error": 0.02778209482655149,
+              "lower": 0.46336969483252044,
+              "upper": 0.5722755065526023,
+              "observed_marginals": 92.0,
+              "corrected_rounds": 46.0,
+              "early_context_observations": 46.0,
+              "middle_context_observations": 24.0,
+              "late_context_observations": 22.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 23,
+          "completed_paths": 96,
+          "high": [
+            2,
+            3
+          ],
+          "uncertain": [
+            0,
+            1
+          ],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 0.9997166434417546,
+            "1": 0.9999999999999225,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.27812841642086433,
+              "standard_error": 0.023404471371155023,
+              "lower": 0.2322556525334005,
+              "upper": 0.3240011803083282,
+              "observed_marginals": 96.0,
+              "corrected_rounds": 48.0,
+              "early_context_observations": 48.0,
+              "middle_context_observations": 28.0,
+              "late_context_observations": 20.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2495428991840003,
+              "standard_error": 0.006978630009321903,
+              "lower": 0.23586478436572936,
+              "upper": 0.2632210140022712,
+              "observed_marginals": 96.0,
+              "corrected_rounds": 48.0,
+              "early_context_observations": 48.0,
+              "middle_context_observations": 20.0,
+              "late_context_observations": 28.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.549011948314743,
+              "standard_error": 0.024915430399555114,
+              "lower": 0.5001777047316149,
+              "upper": 0.597846191897871,
+              "observed_marginals": 96.0,
+              "corrected_rounds": 48.0,
+              "early_context_observations": 48.0,
+              "middle_context_observations": 22.0,
+              "late_context_observations": 26.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5082792368015475,
+              "standard_error": 0.027510218186988438,
+              "lower": 0.4543592091550502,
+              "upper": 0.5621992644480449,
+              "observed_marginals": 96.0,
+              "corrected_rounds": 48.0,
+              "early_context_observations": 48.0,
+              "middle_context_observations": 26.0,
+              "late_context_observations": 22.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        },
+        {
+          "check": 24,
+          "completed_paths": 100,
+          "high": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "uncertain": [],
+          "low": [],
+          "interaction_suspects": [],
+          "next_inclusion_probabilities": {
+            "0": 1.0,
+            "1": 1.0,
+            "2": 1.0,
+            "3": 1.0
+          },
+          "statistics": {
+            "0": {
+              "mean": 0.2821216616448935,
+              "standard_error": 0.02263195054992841,
+              "lower": 0.23776303856703382,
+              "upper": 0.3264802847227532,
+              "observed_marginals": 100.0,
+              "corrected_rounds": 50.0,
+              "early_context_observations": 50.0,
+              "middle_context_observations": 28.0,
+              "late_context_observations": 22.0,
+              "has_context_coverage": 1.0
+            },
+            "1": {
+              "mean": 0.2524831267640365,
+              "standard_error": 0.007005653878307992,
+              "lower": 0.23875204516255283,
+              "upper": 0.2662142083655202,
+              "observed_marginals": 100.0,
+              "corrected_rounds": 50.0,
+              "early_context_observations": 50.0,
+              "middle_context_observations": 22.0,
+              "late_context_observations": 28.0,
+              "has_context_coverage": 1.0
+            },
+            "2": {
+              "mean": 0.5355069055137368,
+              "standard_error": 0.025709047889476356,
+              "lower": 0.48511717165036317,
+              "upper": 0.5858966393771105,
+              "observed_marginals": 100.0,
+              "corrected_rounds": 50.0,
+              "early_context_observations": 50.0,
+              "middle_context_observations": 24.0,
+              "late_context_observations": 26.0,
+              "has_context_coverage": 1.0
+            },
+            "3": {
+              "mean": 0.5148508067984884,
+              "standard_error": 0.026796213156638028,
+              "lower": 0.46233022901147786,
+              "upper": 0.567371384585499,
+              "observed_marginals": 100.0,
+              "corrected_rounds": 50.0,
+              "early_context_observations": 50.0,
+              "middle_context_observations": 26.0,
+              "late_context_observations": 24.0,
+              "has_context_coverage": 1.0
+            }
+          }
+        }
+      ],
+      "coalition_audit_history": [],
+      "coalition_audit_count": 0,
+      "triggered_coalition_audits": 0,
+      "high_group_positions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "certified_high_positions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "uncertain_group_positions": [],
+      "low_group_positions": [],
+      "high_group_count": 4,
+      "low_group_count": 0,
+      "total_observation_counts": {
+        "sepal_length": 100,
+        "sepal_width": 100,
+        "petal_length": 100,
+        "petal_width": 100
+      },
+      "corrected_round_counts": {
+        "sepal_length": 50,
+        "sepal_width": 50,
+        "petal_length": 50,
+        "petal_width": 50
+      },
+      "context_observation_counts": {
+        "sepal_length": {
+          "early": 50,
+          "middle": 28,
+          "late": 22
+        },
+        "sepal_width": {
+          "early": 50,
+          "middle": 22,
+          "late": 28
+        },
+        "petal_length": {
+          "early": 50,
+          "middle": 24,
+          "late": 26
+        },
+        "petal_width": {
+          "early": 50,
+          "middle": 26,
+          "late": 24
+        }
+      },
+      "inclusion_counts": {
+        "sepal_length": 100,
+        "sepal_width": 100,
+        "petal_length": 100,
+        "petal_width": 100
+      },
+      "mean_inclusion_probabilities": {
+        "sepal_length": 1.0,
+        "sepal_width": 1.0,
+        "petal_length": 1.0,
+        "petal_width": 1.0
+      },
+      "screening_estimates": {
+        "sepal_length": 0.2821216616448935,
+        "sepal_width": 0.2524831267640365,
+        "petal_length": 0.5355069055137368,
+        "petal_width": 0.5148508067984884
+      },
+      "standard_errors": {
+        "sepal_length": 0.02263195054992841,
+        "sepal_width": 0.007005653878307992,
+        "petal_length": 0.025709047889476356,
+        "petal_width": 0.026796213156638028
+      },
+      "total_marginal_samples": 400,
+      "baseline_mc_marginal_samples": 400,
+      "marginal_sample_reduction_vs_mc": 0.0,
+      "baseline_mc_coalition_requests": 400,
+      "coalition_evaluation_requests": 402,
+      "sampling_and_audit_requests": 400,
+      "request_reduction_vs_mc": 0.0,
+      "value_evaluations": 16,
+      "value_function_calls": 16,
+      "cache_hits": 386,
+      "cache_misses": 16,
+      "cache_hit_rate": 0.9601990049751243,
+      "cache_size": 16,
+      "raw_efficiency_residual": 0.0,
+      "low_values_are_approximate": false,
+      "high_group": [
+        "sepal_length",
+        "sepal_width",
+        "petal_length",
+        "petal_width"
+      ],
+      "uncertain_group": [],
+      "low_group": [],
+      "screening_observation_counts": {},
+      "formal_observation_counts": {},
+      "low_allocation_weights": {},
+      "formal_stratum_sample_counts": {},
+      "actual_value_function_calls": 16,
+      "value_function_evaluation_requests": 16
+    }
+  },
+  "result": {
+    "shapley_values": {
+      "sepal_length": 0.2821216616448935,
+      "sepal_width": 0.2524831267640365,
+      "petal_length": 0.5355069055137368,
+      "petal_width": 0.5148508067984884
+    },
+    "normalized_shapley_values": {
+      "sepal_length": 0.17799895045878286,
+      "sepal_width": 0.1592991169501847,
+      "petal_length": 0.3378672399315959,
+      "petal_width": 0.32483469265943654
+    },
+    "total_value": 1.5849625007211552
+  }
+}

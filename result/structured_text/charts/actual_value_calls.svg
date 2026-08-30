@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Arial,sans-serif;letter-spacing:0;fill:#20242b}.axis{stroke:#59636f}.label{font-size:13px}.title{font-size:20px;font-weight:700}</style>
+<text x="70" y="34" class="title">High-field accuracy vs actual value-function calls</text>
+<line x1="90" y1="70" x2="90" y2="470" class="axis"/>
+<line x1="90" y1="470" x2="850" y2="470" class="axis"/>
+<text x="385.0" y="525" class="label">Actual value-function calls</text>
+<text x="18" y="270.0" class="label" transform="rotate(-90 18 270.0)">High-member NMAE</text>
+<circle cx="692.17" cy="467.63" r="5" fill="#dc2626"/>
+<text x="699.17" y="460.63" class="label">cnae_9 n=100 MI</text>
+<circle cx="511.81" cy="469.21" r="5" fill="#dc2626"/>
+<text x="518.81" y="462.21" class="label">cnae_9 n=100 HNB</text>
+<circle cx="361.73" cy="464.27" r="5" fill="#dc2626"/>
+<text x="368.73" y="457.27" class="label">cnae_9 n=50 MI</text>
+<circle cx="293.51" cy="465.30" r="5" fill="#dc2626"/>
+<text x="300.51" y="458.30" class="label">cnae_9 n=50 HNB</text>
+<circle cx="456.01" cy="451.63" r="5" fill="#2563eb"/>
+<text x="463.01" y="444.63" class="label">cnae_9 n=50 MI</text>
+<circle cx="843.25" cy="463.47" r="5" fill="#2563eb"/>
+<text x="850.25" y="456.47" class="label">cnae_9 n=100 MI</text>
+<circle cx="843.25" cy="462.62" r="5" fill="#2563eb"/>
+<text x="850.25" y="455.62" class="label">cnae_9 n=100 HNB</text>
+<circle cx="456.01" cy="444.68" r="5" fill="#2563eb"/>
+<text x="463.01" y="437.68" class="label">cnae_9 n=50 HNB</text>
+<circle cx="279.25" cy="464.34" r="5" fill="#dc2626"/>
+<text x="286.25" y="457.34" class="label">cnae_9 n=50 HNB</text>
+<circle cx="850.00" cy="468.82" r="5" fill="#dc2626"/>
+<text x="857.00" y="461.82" class="label">cnae_9 n=100 MI</text>
+<circle cx="521.47" cy="465.01" r="5" fill="#dc2626"/>
+<text x="528.47" y="458.01" class="label">cnae_9 n=100 HNB</text>
+<circle cx="423.36" cy="464.54" r="5" fill="#dc2626"/>
+<text x="430.36" y="457.54" class="label">cnae_9 n=50 MI</text>
+<circle cx="456.70" cy="463.73" r="5" fill="#2563eb"/>
+<text x="463.70" y="456.73" class="label">cnae_9 n=50 HNB</text>
+<circle cx="843.25" cy="462.51" r="5" fill="#2563eb"/>
+<text x="850.25" y="455.51" class="label">cnae_9 n=100 HNB</text>
+<circle cx="456.70" cy="467.84" r="5" fill="#2563eb"/>
+<text x="463.70" y="460.84" class="label">cnae_9 n=50 MI</text>
+<circle cx="843.25" cy="466.38" r="5" fill="#2563eb"/>
+<text x="850.25" y="459.38" class="label">cnae_9 n=100 MI</text>
+<circle cx="338.35" cy="467.56" r="5" fill="#dc2626"/>
+<text x="345.35" y="460.56" class="label">cnae_9 n=50 HNB</text>
+<circle cx="530.75" cy="468.85" r="5" fill="#dc2626"/>
+<text x="537.75" y="461.85" class="label">cnae_9 n=100 HNB</text>
+<circle cx="396.15" cy="468.62" r="5" fill="#dc2626"/>
+<text x="403.15" y="461.62" class="label">cnae_9 n=50 MI</text>
+<circle cx="686.89" cy="468.44" r="5" fill="#dc2626"/>
+<text x="693.89" y="461.44" class="label">cnae_9 n=100 MI</text>
+<circle cx="456.78" cy="463.58" r="5" fill="#2563eb"/>
+<text x="463.78" y="456.58" class="label">cnae_9 n=50 MI</text>
+<circle cx="843.18" cy="466.70" r="5" fill="#2563eb"/>
+<text x="850.18" y="459.70" class="label">cnae_9 n=100 HNB</text>
+<circle cx="456.78" cy="466.71" r="5" fill="#2563eb"/>
+<text x="463.78" y="459.71" class="label">cnae_9 n=50 HNB</text>
+<circle cx="843.18" cy="466.67" r="5" fill="#2563eb"/>
+<text x="850.18" y="459.67" class="label">cnae_9 n=100 MI</text>
+<circle cx="265.07" cy="422.61" r="5" fill="#dc2626"/>
+<text x="272.07" y="415.61" class="label">farm_ads n=50 HNB</text>
+<circle cx="452.49" cy="467.60" r="5" fill="#dc2626"/>
+<text x="459.49" y="460.60" class="label">farm_ads n=50 MI</text>
+<circle cx="822.64" cy="467.15" r="5" fill="#dc2626"/>
+<text x="829.64" y="460.15" class="label">farm_ads n=100 MI</text>
+<circle cx="539.87" cy="354.33" r="5" fill="#dc2626"/>
+<text x="546.87" y="347.33" class="label">farm_ads n=100 HNB</text>
+<circle cx="843.25" cy="442.60" r="5" fill="#2563eb"/>
+<text x="850.25" y="435.60" class="label">farm_ads n=100 HNB</text>
+<circle cx="843.25" cy="465.94" r="5" fill="#2563eb"/>
+<text x="850.25" y="458.94" class="label">farm_ads n=100 MI</text>
+<circle cx="456.01" cy="433.16" r="5" fill="#2563eb"/>
+<text x="463.01" y="426.16" class="label">farm_ads n=50 HNB</text>
+<circle cx="456.01" cy="466.62" r="5" fill="#2563eb"/>
+<text x="463.01" y="459.62" class="label">farm_ads n=50 MI</text>
+<circle cx="648.71" cy="463.58" r="5" fill="#dc2626"/>
+<text x="655.71" y="456.58" class="label">farm_ads n=100 MI</text>
+<circle cx="564.47" cy="462.41" r="5" fill="#dc2626"/>
+<text x="571.47" y="455.41" class="label">farm_ads n=100 HNB</text>
+<circle cx="312.37" cy="463.50" r="5" fill="#dc2626"/>
+<text x="319.37" y="456.50" class="label">farm_ads n=50 HNB</text>
+<circle cx="388.71" cy="466.88" r="5" fill="#dc2626"/>
+<text x="395.71" y="459.88" class="label">farm_ads n=50 MI</text>
+<circle cx="456.70" cy="467.64" r="5" fill="#2563eb"/>
+<text x="463.70" y="460.64" class="label">farm_ads n=50 MI</text>
+<circle cx="843.25" cy="460.54" r="5" fill="#2563eb"/>
+<text x="850.25" y="453.54" class="label">farm_ads n=100 HNB</text>
+<circle cx="843.25" cy="458.11" r="5" fill="#2563eb"/>
+<text x="850.25" y="451.11" class="label">farm_ads n=100 MI</text>
+<circle cx="456.70" cy="462.40" r="5" fill="#2563eb"/>
+<text x="463.70" y="455.40" class="label">farm_ads n=50 HNB</text>
+<circle cx="483.30" cy="443.74" r="5" fill="#dc2626"/>
+<text x="490.30" y="436.74" class="label">farm_ads n=100 HNB</text>
+<circle cx="464.21" cy="468.84" r="5" fill="#dc2626"/>
+<text x="471.21" y="461.84" class="label">farm_ads n=50 MI</text>
+<circle cx="807.00" cy="466.52" r="5" fill="#dc2626"/>
+<text x="814.00" y="459.52" class="label">farm_ads n=100 MI</text>
+<circle cx="296.42" cy="320.66" r="5" fill="#dc2626"/>
+<text x="303.42" y="313.66" class="label">farm_ads n=50 HNB</text>
+<circle cx="843.18" cy="464.57" r="5" fill="#2563eb"/>
+<text x="850.18" y="457.57" class="label">farm_ads n=100 MI</text>
+<circle cx="456.78" cy="453.27" r="5" fill="#2563eb"/>
+<text x="463.78" y="446.27" class="label">farm_ads n=50 HNB</text>
+<circle cx="456.78" cy="467.02" r="5" fill="#2563eb"/>
+<text x="463.78" y="460.02" class="label">farm_ads n=50 MI</text>
+<circle cx="843.18" cy="457.12" r="5" fill="#2563eb"/>
+<text x="850.18" y="450.12" class="label">farm_ads n=100 HNB</text>
+<circle cx="408.49" cy="467.04" r="5" fill="#dc2626"/>
+<text x="415.49" y="460.04" class="label">internet_advertisements n=50 MI</text>
+<circle cx="662.82" cy="461.12" r="5" fill="#dc2626"/>
+<text x="669.82" y="454.12" class="label">internet_advertisements n=100 MI</text>
+<circle cx="539.56" cy="461.74" r="5" fill="#dc2626"/>
+<text x="546.56" y="454.74" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="338.96" cy="462.97" r="5" fill="#dc2626"/>
+<text x="345.96" y="455.97" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="843.25" cy="439.89" r="5" fill="#2563eb"/>
+<text x="850.25" y="432.89" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="456.01" cy="461.46" r="5" fill="#2563eb"/>
+<text x="463.01" y="454.46" class="label">internet_advertisements n=50 MI</text>
+<circle cx="456.01" cy="463.65" r="5" fill="#2563eb"/>
+<text x="463.01" y="456.65" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="843.25" cy="447.87" r="5" fill="#2563eb"/>
+<text x="850.25" y="440.87" class="label">internet_advertisements n=100 MI</text>
+<circle cx="554.66" cy="458.72" r="5" fill="#dc2626"/>
+<text x="561.66" y="451.72" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="683.97" cy="463.83" r="5" fill="#dc2626"/>
+<text x="690.97" y="456.83" class="label">internet_advertisements n=100 MI</text>
+<circle cx="363.88" cy="461.15" r="5" fill="#dc2626"/>
+<text x="370.88" y="454.15" class="label">internet_advertisements n=50 MI</text>
+<circle cx="353.68" cy="459.52" r="5" fill="#dc2626"/>
+<text x="360.68" y="452.52" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="456.70" cy="450.35" r="5" fill="#2563eb"/>
+<text x="463.70" y="443.35" class="label">internet_advertisements n=50 MI</text>
+<circle cx="843.25" cy="460.43" r="5" fill="#2563eb"/>
+<text x="850.25" y="453.43" class="label">internet_advertisements n=100 MI</text>
+<circle cx="843.25" cy="457.66" r="5" fill="#2563eb"/>
+<text x="850.25" y="450.66" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="456.70" cy="455.06" r="5" fill="#2563eb"/>
+<text x="463.70" y="448.06" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="732.26" cy="457.80" r="5" fill="#dc2626"/>
+<text x="739.26" y="450.80" class="label">internet_advertisements n=100 MI</text>
+<circle cx="328.23" cy="449.53" r="5" fill="#dc2626"/>
+<text x="335.23" y="442.53" class="label">internet_advertisements n=50 MI</text>
+<circle cx="599.89" cy="458.03" r="5" fill="#dc2626"/>
+<text x="606.89" y="451.03" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="295.89" cy="453.62" r="5" fill="#dc2626"/>
+<text x="302.89" y="446.62" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="456.78" cy="456.88" r="5" fill="#2563eb"/>
+<text x="463.78" y="449.88" class="label">internet_advertisements n=50 MI</text>
+<circle cx="456.78" cy="460.71" r="5" fill="#2563eb"/>
+<text x="463.78" y="453.71" class="label">internet_advertisements n=50 HNB</text>
+<circle cx="843.18" cy="440.88" r="5" fill="#2563eb"/>
+<text x="850.18" y="433.88" class="label">internet_advertisements n=100 HNB</text>
+<circle cx="843.18" cy="453.53" r="5" fill="#2563eb"/>
+<text x="850.18" y="446.53" class="label">internet_advertisements n=100 MI</text>
+<circle cx="476.78" cy="304.36" r="5" fill="#dc2626"/>
+<text x="483.78" y="297.36" class="label">spambase n=57 HNB</text>
+<circle cx="518.02" cy="451.97" r="5" fill="#dc2626"/>
+<text x="525.02" y="444.97" class="label">spambase n=57 MI</text>
+<circle cx="510.36" cy="440.39" r="5" fill="#2563eb"/>
+<text x="517.36" y="433.39" class="label">spambase n=57 MI</text>
+<circle cx="510.36" cy="290.41" r="5" fill="#2563eb"/>
+<text x="517.36" y="283.41" class="label">spambase n=57 HNB</text>
+<circle cx="518.18" cy="448.03" r="5" fill="#dc2626"/>
+<text x="525.18" y="441.03" class="label">spambase n=57 MI</text>
+<circle cx="444.67" cy="303.83" r="5" fill="#dc2626"/>
+<text x="451.67" y="296.83" class="label">spambase n=57 HNB</text>
+<circle cx="510.89" cy="159.89" r="5" fill="#2563eb"/>
+<text x="517.89" y="152.89" class="label">spambase n=57 HNB</text>
+<circle cx="510.89" cy="432.98" r="5" fill="#2563eb"/>
+<text x="517.89" y="425.98" class="label">spambase n=57 MI</text>
+<circle cx="516.95" cy="449.27" r="5" fill="#dc2626"/>
+<text x="523.95" y="442.27" class="label">spambase n=57 MI</text>
+<circle cx="452.79" cy="70.00" r="5" fill="#dc2626"/>
+<text x="459.79" y="63.00" class="label">spambase n=57 HNB</text>
+<circle cx="510.28" cy="223.78" r="5" fill="#2563eb"/>
+<text x="517.28" y="216.78" class="label">spambase n=57 HNB</text>
+<circle cx="510.28" cy="438.88" r="5" fill="#2563eb"/>
+<text x="517.28" y="431.88" class="label">spambase n=57 MI</text>
+</svg>
