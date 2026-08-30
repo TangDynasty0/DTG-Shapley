@@ -1,16 +1,12 @@
 from abc import ABC, abstractmethod
-import logging
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict
 import numpy as np
 
 """
 Value Quantification Module
 
-This module quantifies the value of different model input combinations by
-measuring their contribution to the model output. It supports multiple
-quantification methods:
-- Information Theory approach
-- Model Performance approach
+This module defines the value-quantification interface and the data-value
+evaluator used by the information-theoretic implementations.
 """
 
 
@@ -35,30 +31,6 @@ class ValueQuantifier(ABC):
 # Pull concrete implementations into separate modules to keep
 # `value_quantification.py` focused on the abstract API.
 from information_theory import InformationTheoryQuantifier
-
-
-class ModelPerformanceQuantifier(ValueQuantifier):
-    """Quantify value based on model performance improvement."""
-    
-    def __init__(self, model=None):
-        """Initialize with a model."""
-        self.model = model
-    
-    def quantify(self, input_data: Any, output: Any) -> float:
-        """Calculate value based on model performance."""
-        # TODO: Implement model performance evaluation
-        return 1.0
-        pass
-    
-    def _evaluate_model(self, input_data: np.ndarray, output: np.ndarray) -> float:
-        """Train and evaluate model, return performance score."""
-        return 1.0
-        pass
-    
-    def _calculate_performance_gain(self, baseline: float, current: float) -> float:
-        """Calculate performance improvement."""
-        return 1.0
-        pass
 
 
 class TestQuantifier(ValueQuantifier):

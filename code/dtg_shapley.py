@@ -753,8 +753,8 @@ class _DTGImplementationBase:
 class DTGShapleyEvaluator(_DTGImplementationBase):
     """Reusable, threshold-aware probability sampler for classical Shapley.
 
-    The public estimator uses a fixed number of reusable sampling paths with a fixed number
-    of reusable sampling paths. Inclusion probabilities are chosen from past
+    The public estimator uses a fixed number of reusable sampling
+    paths. Inclusion probabilities are chosen from past
     observations only. Selected marginals receive Horvitz-Thompson correction,
     so every pre-fallback path remains part of the final estimate. A sampled
     permutation is paired with its reverse whenever the path budget permits.

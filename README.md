@@ -10,11 +10,12 @@ prototype algorithms have been removed.
 - `code/`: DTG-Shapley, paper baselines, value functions, experiment drivers,
   environment files, and a smoke test.
 - `dataset/`: UCI source archives and deterministic generated weak fields.
-- `result/`: complete confirmatory and structured-table experiment outputs.
+- `result/`: complete experiment outputs and the three manuscript figures.
 
 ## Environment
 
 The paper used Python 3.10, NumPy 1.26.4, SciPy 1.15.2, and scikit-learn 1.7.2.
+ReportLab 4.4.9 is included only to regenerate the manuscript figures.
 
 ```bash
 conda env create -f code/environment.yml
@@ -49,6 +50,12 @@ conda run -n greedySHAP python code/run_structured_text_experiment.py --profile 
 
 All commands are resumable. New outputs are written to `reproduced_results/`
 and do not overwrite the results supplied in `result/`.
+
+Regenerate the three manuscript figures from the reported summary values:
+
+```bash
+conda run -n greedySHAP python code/make_paper_figures.py --output-dir result/paper_figures
+```
 
 ## Public API
 

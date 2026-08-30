@@ -1,7 +1,7 @@
 {
   "package": "DTG-Shapley supplementary material",
   "public_algorithm": "DTGShapleyEvaluator",
-  "file_count_before_manifest": 483,
+  "file_count_before_manifest": 487,
   "files": [
     {
       "path": "code/baselines.py",
@@ -15,13 +15,13 @@
     },
     {
       "path": "code/dtg_shapley.py",
-      "bytes": 54852,
-      "sha256": "5df62d739604af26f1cf6804418e4f82bbe8ce298590358fd4e45969be7fdbdf"
+      "bytes": 54805,
+      "sha256": "69ce9a729100fc69927342da7d29e41542884320f792c27cf1a2aa7fcb7f96a5"
     },
     {
       "path": "code/environment.yml",
-      "bytes": 139,
-      "sha256": "893e010cebdcbcf994bf86a1e5165782f9bd4721719e2e9c9f9c58a81509b334"
+      "bytes": 160,
+      "sha256": "19491568d1f10c50647871be346a03d21d2ebfae6cf54c21e55b7f38398c67e1"
     },
     {
       "path": "code/experiment_core.py",
@@ -35,8 +35,8 @@
     },
     {
       "path": "code/information_theory.py",
-      "bytes": 14389,
-      "sha256": "64a54982fd0b560dacee09750cd7c39d1fa481ef12e1b585fbdc3fb17b9f0c3f"
+      "bytes": 13398,
+      "sha256": "4195772f70e3533dda832cded2fca140059b75154d8eb0a4b3e6c9a97560a966"
     },
     {
       "path": "code/LICENSE",
@@ -44,9 +44,14 @@
       "sha256": "52c90e7df55bc669f0278c3a206a99349b147fbaf4682c9be618c53fa7fbb6bb"
     },
     {
+      "path": "code/make_paper_figures.py",
+      "bytes": 5764,
+      "sha256": "bffc08d796c8f79c198e7d7d822f099a0d2c830913cbd9978684040a069fa9f1"
+    },
+    {
       "path": "code/requirements.txt",
-      "bytes": 51,
-      "sha256": "fec862d6920aea61a2b4e611fbe52850b184ba408b45efac4846bbea87d4fa22"
+      "bytes": 69,
+      "sha256": "7496ac8c75e1c69c6a5818814f409e92c8cabc1501dc312ada61bfa2899c923a"
     },
     {
       "path": "code/run_confirmatory_experiment.py",
@@ -75,8 +80,8 @@
     },
     {
       "path": "code/value_quantification.py",
-      "bytes": 4964,
-      "sha256": "94f8146452920bc6afbda59eae5ba28444aaf7a9416119a7707df59de71763df"
+      "bytes": 4047,
+      "sha256": "163c65b8164cbedfc537ca872fa578862454e925406c3f966db60e038788bcfc"
     },
     {
       "path": "dataset/checksums.sha256",
@@ -130,8 +135,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2604,
-      "sha256": "0ae24a491b642fa1117d5527683fa47612a6dc14cf6adc00b18c48c5f0434b40"
+      "bytes": 2861,
+      "sha256": "31cad3af303d28d6e4745e00c182d74c582b565647e0c34b26dfc91037074232"
     },
     {
       "path": "result/confirmatory/charts/comparison.svg",
@@ -1479,9 +1484,24 @@
       "sha256": "ed909a2880344d09cb75bd6f843598a4bc97316bc2f0a3352d4ebe39cd8ee078"
     },
     {
+      "path": "result/paper_figures/low_tail_scaling.pdf",
+      "bytes": 2418,
+      "sha256": "488a83176e94d78080a7da02cb082f97754df8f65382518093b2ad2c15a11a61"
+    },
+    {
+      "path": "result/paper_figures/method_overview.pdf",
+      "bytes": 2271,
+      "sha256": "b8d2cdc9ac7351a6dd6fea47133b2c0682d8d2bcd3203248f09a41f398a06c01"
+    },
+    {
+      "path": "result/paper_figures/overall_tradeoff.pdf",
+      "bytes": 1890,
+      "sha256": "a21cfed32965396a8207d21bb325db16014e5f6fbe0e1c8889c744522ce7d032"
+    },
+    {
       "path": "result/README.md",
-      "bytes": 541,
-      "sha256": "ac972929deed6071ec9820ec710aa286cbcf3c78eb1d39595abc9610d2a8b8e7"
+      "bytes": 614,
+      "sha256": "728cbb6081a23375f7d699d268ab61dd05062f8dcc32046622d15cb65ede62f7"
     },
     {
       "path": "result/structured_text/charts/actual_value_calls.svg",

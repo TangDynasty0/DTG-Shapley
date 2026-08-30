@@ -3,6 +3,7 @@
 `confirmatory/` contains all 259 persisted cases used for the paper's target-
 regime, general-compatibility, and baseline-comparison analyses.
 `structured_text/` contains the 180-case HNB/MI runtime stress experiment.
+`paper_figures/` contains the three PDF figures used in the manuscript.
 
 Each result set contains the run manifest, immutable per-case JSON records,
 CSV/JSON summaries, and SVG charts. Public-facing copies use the single label

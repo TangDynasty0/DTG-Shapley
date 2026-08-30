@@ -413,26 +413,3 @@ class HoldoutNaiveBayesInformationQuantifier:
                 ) from error
         predictive_information = self._baseline_loss - self._log_loss_bits(log_joint)
         return max(0.0, float(predictive_information))
-
-
-
-# class InformationTheoryQuantifier(ValueQuantifier):
-#     """Quantify value using information theory metrics."""
-
-#     def quantify(self, input_data: np.ndarray, output: np.ndarray) -> float:
-#         """Calculate information-theoretic value (e.g., mutual information)."""
-#         # TODO: Replace with a real mutual information / entropy calculation.
-#         logging.info("InformationTheoryQuantifier.quantify called")
-#         logging.debug("input_data shape: %s", getattr(input_data, 'shape', None))
-#         logging.debug("output shape: %s", getattr(output, 'shape', None))
-#         return 1.0
-
-#     def _calculate_entropy(self, data: np.ndarray) -> float:
-#         """Calculate Shannon entropy."""
-#         # Placeholder
-#         return 1.0
-
-#     def _calculate_mutual_information(self, input_data: np.ndarray, output: np.ndarray) -> float:
-#         """Calculate mutual information between input data and model output."""
-#         # Placeholder
-#         return 1.0
