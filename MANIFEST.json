@@ -1,8 +1,13 @@
 {
   "package": "DTG-Shapley supplementary material",
   "public_algorithm": "DTGShapleyEvaluator",
-  "file_count_before_manifest": 487,
+  "file_count_before_manifest": 488,
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 14,
+      "sha256": "fdfa7b607b52326cb536a984c43634aaa9afd5fb2c3df583c525f68615a80fad"
+    },
     {
       "path": "code/baselines.py",
       "bytes": 23691,
