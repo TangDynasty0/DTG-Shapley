@@ -1,7 +1,7 @@
 {
   "package": "DTG-Shapley supplementary material",
   "public_algorithm": "DTGShapleyEvaluator",
-  "file_count_before_manifest": 488,
+  "file_count_before_manifest": 497,
   "files": [
     {
       "path": ".gitattributes",
@@ -37,6 +37,11 @@
       "path": "code/experiment_utils.py",
       "bytes": 4622,
       "sha256": "7f64390c9879f540ca77401e863fd68c98e79029793af4a7856e72fa52a9294d"
+    },
+    {
+      "path": "code/generate_simulated_datasets.py",
+      "bytes": 10081,
+      "sha256": "4d74172588659904693f488bfbd9b9fe2f8c72b82036463339cc3fbb0253f95a"
     },
     {
       "path": "code/information_theory.py",
@@ -90,8 +95,8 @@
     },
     {
       "path": "dataset/checksums.sha256",
-      "bytes": 754,
-      "sha256": "7a867d82474f684bd0c0e0ec0aad8116fa4608640b4128e7179bbc8c32ae16ab"
+      "bytes": 1626,
+      "sha256": "5609d5e05ecd54e1496adf08383980a9abc543f2e6b50836de432f4769a6f55c"
     },
     {
       "path": "dataset/generated/iris__samples150__low8__seed11.npz",
@@ -110,8 +115,48 @@
     },
     {
       "path": "dataset/README.md",
-      "bytes": 1282,
-      "sha256": "6efb8f9d86a1251ec4f5eabf6ec82a67a5bad2e929a5ae7ecd5512a37b62137c"
+      "bytes": 1599,
+      "sha256": "1f749df6d570ece8adff012667afdee717d2ada26844aaee4c2551eb7647da53"
+    },
+    {
+      "path": "dataset/simulated_raw/generate_simulated_datasets.py",
+      "bytes": 10081,
+      "sha256": "4d74172588659904693f488bfbd9b9fe2f8c72b82036463339cc3fbb0253f95a"
+    },
+    {
+      "path": "dataset/simulated_raw/iris_with_weak_fields_seed11.csv",
+      "bytes": 13349,
+      "sha256": "81ed7c21a477da185d12238f4ba14b14b7a71a44f444d7ca7d87ea3d0d96e113"
+    },
+    {
+      "path": "dataset/simulated_raw/iris_with_weak_fields_seed23.csv",
+      "bytes": 13349,
+      "sha256": "6e3b4f69c21b3e1b6d1b6cb710d78b51658539ad6c6896305ee06ca8f299d111"
+    },
+    {
+      "path": "dataset/simulated_raw/iris_with_weak_fields_seed42.csv",
+      "bytes": 13349,
+      "sha256": "bf3873e7e5b1aa33b9774bef968c2978f53f416cebefe9e9dc5a00f68c6fb79d"
+    },
+    {
+      "path": "dataset/simulated_raw/README.md",
+      "bytes": 3221,
+      "sha256": "7de6a4a40bcd44fe5294019a30092c49ca2d9260db37eeb84ec7b0ecad6bc413"
+    },
+    {
+      "path": "dataset/simulated_raw/simulated_dataset_manifest.csv",
+      "bytes": 846,
+      "sha256": "ea846d426be28b5a160a23b00ff7ec065cf1df6549b135b8226f708eefd14e83"
+    },
+    {
+      "path": "dataset/simulated_raw/simulated_games_interactions.csv",
+      "bytes": 5075,
+      "sha256": "14f0dff3cf85369f31e6e2b97803c86add9ca1bf1ca5fb138f6408ba99db04a4"
+    },
+    {
+      "path": "dataset/simulated_raw/simulated_games_members.csv",
+      "bytes": 11811,
+      "sha256": "126dcd7d46a7e37787a95e16b0ee1213d00dbbd0dd78def1290300d05e26b542"
     },
     {
       "path": "dataset/uci/cnae_9.zip",
@@ -140,8 +185,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2775,
-      "sha256": "3401b93ac3cb5d97c1a50c53781d3ae7fff3de8fff545613c9b2a9732d64f9f7"
+      "bytes": 3110,
+      "sha256": "792bd1bdb7b76b875929f6f35f38fc18bb79932a3cb10eba20ebb8f589b3f9ac"
     },
     {
       "path": "result/confirmatory/charts/comparison.svg",

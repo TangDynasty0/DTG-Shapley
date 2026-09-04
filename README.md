@@ -8,8 +8,10 @@ prototype algorithms have been removed.
 ## Directory layout
 
 - `code/`: DTG-Shapley, paper baselines, value functions, experiment drivers,
-  environment files, and a smoke test.
+  environment files, the simulated-data reproduction script, and a smoke test.
 - `dataset/`: UCI source archives and deterministic generated weak fields.
+  Human- and machine-readable simulated raw data are in
+  `dataset/simulated_raw/`.
 - `result/`: complete experiment outputs and the three manuscript figures.
 
 ## Environment
@@ -26,6 +28,15 @@ The existing project environment can also be used:
 
 ```bash
 conda run -n greedySHAP python code/tests/test_smoke.py
+```
+
+## Reproduce simulated raw data
+
+Generate the CSV files used for the simulated cooperative games and Iris weak-
+field experiment:
+
+```bash
+conda run -n greedySHAP python code/generate_simulated_datasets.py
 ```
 
 ## Reproduce experiments
