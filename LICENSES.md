@@ -5,14 +5,18 @@ artifacts, and third-party datasets. Their licenses are intentionally separate.
 
 ## Source code
 
-All source code under `code/` is licensed under the MIT License. The full text
-is in `code/LICENSE`.
+All source code under `code/`, including the identical standalone copy of
+`generate_simulated_datasets.py` under `dataset/simulated_raw/`, is licensed
+under the MIT License. The full text is in `code/LICENSE`.
 
 ## Original experiment artifacts
 
-The generated weak-field matrices under `dataset/generated/` and the experiment
-outputs under `result/` are released by the DTG-Shapley authors under the
-Creative Commons Attribution 4.0 International license (CC BY 4.0).
+The synthetic-game CSV files under `dataset/simulated_raw/`, the generated
+weak-field values under `dataset/generated/` and `dataset/simulated_raw/`, and
+the experiment outputs under `result/` are released by the DTG-Shapley authors
+under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+The original Iris measurements and labels embedded in the augmented CSV files
+remain third-party UCI material under the same CC BY 4.0 license.
 
 ## UCI datasets
 

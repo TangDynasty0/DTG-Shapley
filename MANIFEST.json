@@ -180,13 +180,13 @@
     },
     {
       "path": "LICENSES.md",
-      "bytes": 1420,
-      "sha256": "b79b55ea6fea841b6ec50112e6a31f949cbb934e9be5d29368a8e0a5a973eb1f"
+      "bytes": 1762,
+      "sha256": "662d98775fa84a8cba34d77f7d93ec65d0a3f6e7ea99e8cbc73ca36d64c6d171"
     },
     {
       "path": "README.md",
-      "bytes": 3110,
-      "sha256": "792bd1bdb7b76b875929f6f35f38fc18bb79932a3cb10eba20ebb8f589b3f9ac"
+      "bytes": 9001,
+      "sha256": "0dde638e3222f12e6d169a689a8791fb5541e92e4d3d8090df99cb0e595e09d3"
     },
     {
       "path": "result/confirmatory/charts/comparison.svg",
