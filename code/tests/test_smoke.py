@@ -62,7 +62,7 @@ class DTGSmokeTest(unittest.TestCase):
                 all(math.isfinite(value) for value in result.shapley_values.values())
             )
 
-    def test_packaged_uci_archive(self):
+    def test_packaged_uci_csv(self):
         dataset = load_experiment_dataset(
             "cnae_9",
             feature_subset_count=10,

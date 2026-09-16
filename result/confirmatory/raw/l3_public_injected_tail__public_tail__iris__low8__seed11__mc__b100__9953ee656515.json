@@ -60,11 +60,11 @@
           2
         ],
         "independent_of_target": true,
-        "cache_file": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.npz"
+        "cache_file": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.csv"
       }
     },
     "value_quantifier": "mutual_information",
-    "artificial_field_cache": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.npz"
+    "artificial_field_cache": "dtg_paper_comparison_results\\dtg_confirmatory\\dataset_cache\\iris__samples150__low8__seed11.csv"
   },
   "metrics": {
     "started_at": "2026-08-29T06:00:01.806175+00:00",

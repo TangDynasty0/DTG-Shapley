@@ -1,8 +1,8 @@
 """Generate the raw simulated datasets reported in the DTG-Shapley paper.
 
-The script is self-contained apart from NumPy and scikit-learn. It exports the
-synthetic cooperative-game definitions and the three Iris datasets augmented
-with eight independent binary weak fields as human- and machine-readable CSV.
+The script uses NumPy and the repository's human-readable Iris CSV. It exports
+the synthetic cooperative-game definitions and the three Iris datasets
+augmented with eight independent binary weak fields as CSV.
 """
 
 from __future__ import annotations
@@ -15,7 +15,6 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 import numpy as np
-from sklearn.datasets import load_iris
 
 
 IRIS_WEAK_FIELD_SEEDS = (11, 23, 42)
@@ -213,12 +212,21 @@ def generate_game_tables(output_dir: Path) -> list[tuple[Path, int, str]]:
 
 
 def generate_iris_tables(output_dir: Path) -> list[tuple[Path, int, str]]:
-    iris = load_iris()
-    feature_names = [
-        name.replace(" (cm)", "").replace(" ", "_").replace("/", "_").replace("-", "_")
-        for name in iris.feature_names
-    ]
-    target_names = tuple(str(name) for name in iris.target_names)
+    iris_path = output_dir / "iris.csv"
+    if not iris_path.exists():
+        iris_path = Path(__file__).resolve().parents[1] / "dataset" / "csv" / "iris.csv"
+    with iris_path.open("r", encoding="utf-8", newline="") as stream:
+        iris_rows = list(csv.DictReader(stream))
+    if not iris_rows:
+        raise ValueError(f"Iris CSV contains no observations: {iris_path}")
+    excluded = {"sample_id", "target", "target_label"}
+    feature_names = [name for name in iris_rows[0] if name not in excluded]
+    iris_data = np.asarray(
+        [[float(row[name]) for name in feature_names] for row in iris_rows],
+        dtype=float,
+    )
+    iris_target = np.asarray([int(row["target"]) for row in iris_rows], dtype=int)
+    target_labels = [row["target_label"] for row in iris_rows]
     generated: list[tuple[Path, int, str]] = []
     for seed in IRIS_WEAK_FIELD_SEEDS:
         rng = np.random.default_rng(seed)
@@ -227,19 +235,19 @@ def generate_iris_tables(output_dir: Path) -> list[tuple[Path, int, str]]:
         weak_fields = rng.integers(
             1,
             3,
-            size=(IRIS_WEAK_FIELD_COUNT, len(iris.data)),
+            size=(IRIS_WEAK_FIELD_COUNT, len(iris_data)),
             dtype=np.int8,
         ).T
         path = output_dir / f"iris_with_weak_fields_seed{seed}.csv"
         rows = (
             (
                 sample_index,
-                *(format_float(value) for value in iris.data[sample_index]),
+                *(format_float(value) for value in iris_data[sample_index]),
                 *(int(value) for value in weak_fields[sample_index]),
-                int(iris.target[sample_index]),
-                target_names[int(iris.target[sample_index])],
+                int(iris_target[sample_index]),
+                target_labels[sample_index],
             )
-            for sample_index in range(len(iris.data))
+            for sample_index in range(len(iris_data))
         )
         row_count = write_csv(
             path,
@@ -289,7 +297,7 @@ def generate(output_dir: Path) -> None:
 def parse_args() -> argparse.Namespace:
     script_dir = Path(__file__).resolve().parent
     default_output = (
-        script_dir.parent / "dataset" / "simulated_raw"
+        script_dir.parent / "dataset" / "csv"
         if script_dir.name == "code"
         else script_dir
     )

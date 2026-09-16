@@ -45,12 +45,23 @@ def augment_with_persistent_low_fields(
 
     sample_count = int(dataset.data_combinations.shape[1])
     cache_path = cache_dir / (
-        f"{dataset.name}__samples{sample_count}__low{count}__seed{seed}.npz"
+        f"{dataset.name}__samples{sample_count}__low{count}__seed{seed}.csv"
     )
     cache_dir.mkdir(parents=True, exist_ok=True)
     if cache_path.exists():
-        with np.load(cache_path) as archive:
-            artificial = np.asarray(archive["values"])
+        stored = np.loadtxt(
+            cache_path,
+            delimiter=",",
+            skiprows=1,
+            dtype=int,
+            ndmin=2,
+        )
+        if stored.shape[1] != count + 1:
+            raise ValueError(f"Invalid persistent low-field cache: {cache_path}")
+        sample_ids = stored[:, 0].astype(int)
+        if not np.array_equal(sample_ids, np.arange(sample_count)):
+            raise ValueError(f"Invalid sample identifiers in cache: {cache_path}")
+        artificial = stored[:, 1:].T.astype(np.int8)
         if artificial.shape != (count, sample_count):
             raise ValueError(f"Invalid persistent low-field cache: {cache_path}")
     else:
@@ -61,8 +72,21 @@ def augment_with_persistent_low_fields(
             size=(count, sample_count),
             dtype=np.int8,
         )
-        temporary = cache_path.with_suffix(".tmp.npz")
-        np.savez_compressed(temporary, values=artificial)
+        temporary = cache_path.with_suffix(".tmp.csv")
+        stored = np.column_stack((np.arange(sample_count), artificial.T))
+        np.savetxt(
+            temporary,
+            stored,
+            delimiter=",",
+            fmt="%d",
+            header=",".join(
+                [
+                    "sample_id",
+                    *(f"synthetic_low_{index + 1}" for index in range(count)),
+                ]
+            ),
+            comments="",
+        )
         temporary.replace(cache_path)
 
     names = [f"synthetic_low_{index + 1}" for index in range(count)]
